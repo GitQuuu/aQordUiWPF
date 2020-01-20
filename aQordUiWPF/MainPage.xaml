@@ -6,9 +6,31 @@
       xmlns:local="clr-namespace:aQordUiWPF"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="MainPage">
+      Title="MainPage" Height="450" Width="800">
 
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="72" Margin="0,10,0,0" >
+            Welcome to aQord
+        </TextBlock>
+        <Grid Name="HomeIndex">
+            <Button Content="Bricklayer Industry" HorizontalAlignment="Left" Margin="45,0,0,0" VerticalAlignment="Center" Height="72" Width="135" Click="Bricklayer_Clicked" FontWeight="Bold" Foreground="BurlyWood"/>
+            <Button Content="Timber Industry" HorizontalAlignment="Left" Margin="231,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="DemiBold" Foreground="BlueViolet" />
+            <Button Content="Painting Industry" HorizontalAlignment="Left" Margin="421,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Heavy" Foreground="Brown"/>
+            <Button Content="Plumbing Industry" HorizontalAlignment="Left" Margin="597,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Bold" Foreground="Teal" />
+            <Button Content="Exit" HorizontalAlignment="Left" Margin="597,285,0,0" VerticalAlignment="Top" Height="72" Width="135" Click="Exit_Click" FontWeight="ExtraBold" Foreground="Red"/>
+        </Grid>
+        <Grid Visibility="Collapsed" Name="Bricklayer_Industry">
+            <TextBlock>Bricklayer Index</TextBlock>
+        </Grid>
+        <Grid Visibility="Collapsed" Name="Timber_Industry">
+            <TextBlock>Carpenter Index</TextBlock>
+        </Grid>
+        <Grid Visibility="Collapsed" Name="Painting_Industry">
+            <TextBlock>Construction Painter Index</TextBlock>
+        </Grid>
+        <Grid Visibility="Collapsed" Name="Plumbing_industry">
+            <TextBlock>Plumber Index</TextBlock>
+        </Grid>
+
     </Grid>
 </Page>

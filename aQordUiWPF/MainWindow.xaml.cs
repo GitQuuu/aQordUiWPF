@@ -23,19 +23,8 @@ namespace aQordUiWPF
         public MainWindow()
         {
             InitializeComponent();
+            _NavigationFrame.Navigate(new MainPage());
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            HomeIndex.Visibility = Visibility.Collapsed;
-            Bricklayer_Industry.Visibility = Visibility.Visible;
-        }
-
-
-        private void Exit_Click(object sender, RoutedEventArgs e)
-        {
-
-            Application.Current.Shutdown();
-        }
     }
 }

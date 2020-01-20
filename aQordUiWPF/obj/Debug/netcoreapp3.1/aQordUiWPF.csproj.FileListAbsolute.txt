@@ -15,3 +15,7 @@ C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\aQordU
 C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\aQordUiWPF.AssemblyInfo.cs
 C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\aQordUiWPF.dll
 C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\aQordUiWPF.pdb
+C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\MainPage.g.cs
+C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\MainPage.baml
+C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\BricklayerMenu.g.cs
+C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\BricklayerMenu.baml

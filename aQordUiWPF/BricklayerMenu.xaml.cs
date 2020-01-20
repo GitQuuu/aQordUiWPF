@@ -14,25 +14,13 @@ using System.Windows.Shapes;
 namespace aQordUiWPF
 {
     /// <summary>
-    /// Interaction logic for MainPage.xaml
+    /// Interaction logic for BricklayerMenu.xaml
     /// </summary>
-    public partial class MainPage : Page
+    public partial class BricklayerMenu : Page
     {
-        public MainPage()
+        public BricklayerMenu()
         {
             InitializeComponent();
-        }
-
-        private void Bricklayer_Clicked(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new Uri("BricklayerMenu.xaml", UriKind.Relative));
-        }
-
-
-        private void Exit_Click(object sender, RoutedEventArgs e)
-        {
-
-            Application.Current.Shutdown();
         }
     }
 }
