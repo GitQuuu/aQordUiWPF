@@ -27,7 +27,15 @@ namespace aQordUiWPF
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("You clicked me at ");
+            HomeIndex.Visibility = Visibility.Collapsed;
+            Bricklayer_Industry.Visibility = Visibility.Visible;
+        }
+
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+
+            Application.Current.Shutdown();
         }
     }
 }
