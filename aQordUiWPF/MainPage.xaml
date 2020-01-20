@@ -18,19 +18,7 @@
             <Button Content="Painting Industry" HorizontalAlignment="Left" Margin="421,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Heavy" Foreground="Brown"/>
             <Button Content="Plumbing Industry" HorizontalAlignment="Left" Margin="597,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Bold" Foreground="Teal" />
             <Button Content="Exit" HorizontalAlignment="Left" Margin="597,285,0,0" VerticalAlignment="Top" Height="72" Width="135" Click="Exit_Click" FontWeight="ExtraBold" Foreground="Red"/>
+            <TextBlock FontSize="22" HorizontalAlignment="Center" Margin="0,121,0,0" Text="Choose following options for your project" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="488"/>
         </Grid>
-        <Grid Visibility="Collapsed" Name="Bricklayer_Industry">
-            <TextBlock>Bricklayer Index</TextBlock>
-        </Grid>
-        <Grid Visibility="Collapsed" Name="Timber_Industry">
-            <TextBlock>Carpenter Index</TextBlock>
-        </Grid>
-        <Grid Visibility="Collapsed" Name="Painting_Industry">
-            <TextBlock>Construction Painter Index</TextBlock>
-        </Grid>
-        <Grid Visibility="Collapsed" Name="Plumbing_industry">
-            <TextBlock>Plumber Index</TextBlock>
-        </Grid>
-
     </Grid>
 </Page>
