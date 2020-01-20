@@ -22,5 +22,10 @@ namespace aQordUiWPF
         {
             InitializeComponent();
         }
+
+        public void Return()
+        {
+      
+        }
     }
 }

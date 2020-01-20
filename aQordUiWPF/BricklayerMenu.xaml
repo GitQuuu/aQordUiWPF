@@ -6,9 +6,33 @@
       xmlns:local="clr-namespace:aQordUiWPF"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="BricklayerMenu">
+      Title="BricklayerMenu"
+      Background="White">
 
     <Grid>
         <TextBlock FontSize="52" HorizontalAlignment="Center">Bricklaying Index</TextBlock>
+
+        <Grid Name="HomeIndex">
+            <Button Content="Bathroom" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Bold" Foreground="BurlyWood"/>
+            <Button Content="Bricklaying Industry" HorizontalAlignment="Left" Margin="170,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="DemiBold" Foreground="BlueViolet" />
+            <Button Content="Screeting" HorizontalAlignment="Left" Margin="320,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Heavy" Foreground="Brown"/>
+            <Button Content="Polish" HorizontalAlignment="Left" Margin="475,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Bold" Foreground="Teal" />
+            <Button Content="Return" HorizontalAlignment="Left" Margin="632,283,0,0" VerticalAlignment="Top" Height="72" Width="135" FontWeight="ExtraBold" Foreground="Red"/>
+            <Button Content="Brick filling" HorizontalAlignment="Left" Margin="632,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Bold" Foreground="BurlyWood"/>
+        </Grid>
+        <Grid Visibility="Collapsed" Name="Bricklayer_Industry">
+            <TextBlock>Bricklayer Index</TextBlock>
+        </Grid>
+        <Grid Visibility="Collapsed" Name="Timber_Industry">
+            <TextBlock>Carpenter Index</TextBlock>
+        </Grid>
+        <Grid Visibility="Collapsed" Name="Painting_Industry">
+            <TextBlock>Construction Painter Index</TextBlock>
+        </Grid>
+        <Grid Visibility="Collapsed" Name="Plumbing_industry">
+            <TextBlock>Plumber Index</TextBlock>
+        </Grid>
+
+
     </Grid>
 </Page>

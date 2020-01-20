@@ -4,7 +4,6 @@ C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\bin\Debug\netcoreapp3.1\aQordU
 C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\bin\Debug\netcoreapp3.1\aQordUiWPF.runtimeconfig.dev.json
 C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\bin\Debug\netcoreapp3.1\aQordUiWPF.dll
 C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\bin\Debug\netcoreapp3.1\aQordUiWPF.pdb
-C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\aQordUiWPF.csprojAssemblyReference.cache
 C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\aQordUiWPF_MarkupCompile.cache
