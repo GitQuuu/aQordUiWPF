@@ -23,9 +23,11 @@ namespace aQordUiWPF
             InitializeComponent();
         }
 
-        public void Return()
+
+        private void Return_To_MainPage(object sender, RoutedEventArgs e)
         {
-      
+            this.NavigationService.Navigate(new Uri("MainPage.xaml", UriKind.Relative));
+            
         }
     }
 }
