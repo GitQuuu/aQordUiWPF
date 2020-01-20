@@ -10,15 +10,15 @@
       Background="White">
 
     <Grid>
-        <TextBlock FontSize="52" HorizontalAlignment="Center">Bricklaying Index</TextBlock>
-
+        <TextBlock FontSize="52" HorizontalAlignment="Center">Murer</TextBlock>
+        <TextBlock FontSize="22" HorizontalAlignment="Left" Margin="286,120,0,0" Text="Vælg følgende emne" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="488"/>
         <Grid Name="BricklayerIndex">
-            <Button Content="Bathroom" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Bold" Foreground="BurlyWood"/>
-            <Button Content="Bricklaying Industry" HorizontalAlignment="Left" Margin="170,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="DemiBold" Foreground="BlueViolet" />
-            <Button Content="Screeting" HorizontalAlignment="Left" Margin="320,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Heavy" Foreground="Brown"/>
-            <Button Content="Polish" HorizontalAlignment="Left" Margin="475,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Bold" Foreground="Teal" />
-            <Button Content="Return" HorizontalAlignment="Left" Margin="632,283,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="ExtraBold" Foreground="Red" Click="Return_To_MainPage"/>
-            <Button Content="Brick filling" HorizontalAlignment="Left" Margin="632,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Bold" Foreground="BurlyWood"/>
+            <Button Content="Fliser"  HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Bold" Foreground="BurlyWood" Click="PickTiles"/>
+            <Button Content="Opmuring" HorizontalAlignment="Left" Margin="170,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="DemiBold" Foreground="BlueViolet"  />
+            <Button Content="Støbning" HorizontalAlignment="Left" Margin="320,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Heavy" Foreground="Brown"/>
+            <Button Content="Puds" HorizontalAlignment="Left" Margin="475,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Bold" Foreground="Teal" />
+            <Button Content="Fugning" HorizontalAlignment="Left" Margin="632,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Bold" Foreground="BurlyWood"/>
+            <Button Content="Tilbage" HorizontalAlignment="Left" Margin="632,283,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="ExtraBold" Foreground="Red" Click="Return_To_MainPage"/>
         </Grid>
     </Grid>
 </Page>

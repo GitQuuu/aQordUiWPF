@@ -29,5 +29,10 @@ namespace aQordUiWPF
             this.NavigationService.Navigate(new Uri("MainPage.xaml", UriKind.Relative));
             
         }
+
+        private void PickTiles(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("TilesMenu.xaml", UriKind.Relative));
+        }
     }
 }

@@ -14,11 +14,11 @@ using System.Windows.Shapes;
 namespace aQordUiWPF
 {
     /// <summary>
-    /// Interaction logic for BricklayerFields.xaml
+    /// Interaction logic for TilesMenu.xaml
     /// </summary>
-    public partial class BricklayerFields : Page
+    public partial class TilesMenu : Page
     {
-        public BricklayerFields()
+        public TilesMenu()
         {
             InitializeComponent();
         }

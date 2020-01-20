@@ -18,4 +18,5 @@ C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\MainPa
 C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\MainPage.baml
 C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\BricklayerMenu.g.cs
 C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\BricklayerMenu.baml
-C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\aQordUiWPF.csprojAssemblyReference.cache
+C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\TilesMenu.g.cs
+C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\TilesMenu.baml
