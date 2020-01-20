@@ -34,3 +34,7 @@ aQordUiWPF/obj/Release/netcoreapp3.1/aQordUiWPF_MarkupCompile.lref
 aQordUiWPF/obj/Release/netcoreapp3.1/MainWindow.g.cs
 
 aQordUiWPF/obj/Release/netcoreapp3.1/View/HomePage/MainPage.g.cs
+
+.vs/aQordUiWPF/v16/.suo
+
+aQordUiWPF/obj/Debug/netcoreapp3.1/MainWindow.baml
