@@ -3,7 +3,6 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:aQordUiWPF"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MainPage" Height="450" Width="800" Background="White">
@@ -14,9 +13,9 @@
         </TextBlock>
         <TextBlock FontSize="22" HorizontalAlignment="Center" Margin="0,121,0,0" Text="Vælg følgende branche som passer til dit projekt" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="488"/>
         <Grid Name="HomeIndex">
-            <Button Content="Murer" HorizontalAlignment="Left" Margin="45,0,0,0" VerticalAlignment="Center" Height="72" Width="135" Click="Bricklayer_Clicked" FontWeight="Bold" Foreground="BurlyWood"/>
-            <Button Content="Tømrer" HorizontalAlignment="Left" Margin="231,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="DemiBold" Foreground="BlueViolet" />
-            <Button Content="Maler" HorizontalAlignment="Left" Margin="421,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Heavy" Foreground="Brown"/>
+            <Button Content="Murer" HorizontalAlignment="Left" Margin="45,0,0,0" VerticalAlignment="Center" Height="72" Width="135" Click="PickBricklayer" FontWeight="Bold" Foreground="BurlyWood"/>
+            <Button Content="Tømrer" HorizontalAlignment="Left" Margin="231,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="DemiBold" Foreground="BlueViolet" Click="PickCarpenter" />
+            <Button Content="Maler" HorizontalAlignment="Left" Margin="421,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Heavy" Foreground="Brown" Click="PickConstructionPainter"/>
             <Button Content="VVS" HorizontalAlignment="Left" Margin="597,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Bold" Foreground="Teal" />
             <Button Content="Afslut" HorizontalAlignment="Left" Margin="597,285,0,0" VerticalAlignment="Top" Height="72" Width="135" Click="Exit_Click" FontWeight="ExtraBold" Foreground="Red"/>
         </Grid>

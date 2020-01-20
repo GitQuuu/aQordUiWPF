@@ -32,7 +32,7 @@ namespace aQordUiWPF
 
         private void PickTiles(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Uri("TilesMenu.xaml", UriKind.Relative));
+            this.NavigationService.Navigate(new Uri("BricklayerTilesMenu.xaml", UriKind.Relative));
         }
     }
 }

@@ -23,16 +23,25 @@ namespace aQordUiWPF
             InitializeComponent();
         }
 
-        private void Bricklayer_Clicked(object sender, RoutedEventArgs e)
+        private void PickBricklayer(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new Uri("BricklayerMenu.xaml", UriKind.Relative));
         }
 
+        private void PickCarpenter(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("CarpenterMenu.xaml", UriKind.Relative));
+        }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
 
             Application.Current.Shutdown();
+        }
+
+        private void PickConstructionPainter(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("ConstructionPainterMenu.xaml", UriKind.Relative));
         }
     }
 }

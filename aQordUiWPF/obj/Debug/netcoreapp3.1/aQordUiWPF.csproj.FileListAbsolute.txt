@@ -7,7 +7,6 @@ C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\bin\Debug\netcoreapp3.1\aQordU
 C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\aQordUiWPF_MarkupCompile.cache
-C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\aQordUiWPF_MarkupCompile.lref
 C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\MainWindow.baml
 C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\aQordUiWPF.g.resources
 C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\aQordUiWPF.AssemblyInfoInputs.cache
@@ -18,5 +17,9 @@ C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\MainPa
 C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\MainPage.baml
 C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\BricklayerMenu.g.cs
 C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\BricklayerMenu.baml
-C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\TilesMenu.g.cs
-C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\TilesMenu.baml
+C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\CarpenterMenu.g.cs
+C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\CarpenterMenu.baml
+C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\BricklayerTilesMenu.baml
+C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\BricklayerTilesMenu.g.cs
+C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\ConstructionPainterMenu.baml
+C:\Users\Quanv\source\repos\aQordUiWPF\aQordUiWPF\obj\Debug\netcoreapp3.1\ConstructionPainterMenu.g.cs

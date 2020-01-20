@@ -14,13 +14,18 @@ using System.Windows.Shapes;
 namespace aQordUiWPF
 {
     /// <summary>
-    /// Interaction logic for TilesMenu.xaml
+    /// Interaction logic for BricklayerTilesMenu.xaml
     /// </summary>
-    public partial class TilesMenu : Page
+    public partial class BricklayerTilesMenu : Page
     {
-        public TilesMenu()
+        public BricklayerTilesMenu()
         {
             InitializeComponent();
+        }
+
+        private void Return(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.GoBack();
         }
     }
 }
