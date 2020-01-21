@@ -80,3 +80,7 @@ aQordUiWPF/obj/Release/netcoreapp3.1/aQordUiWPF_MarkupCompile.lref
 aQordUiWPF/obj/Release/netcoreapp3.1/BricklayerFields.g.cs
 
 aQordUiWPF/obj/
+
+.vs/aQordUiWPF/DesignTimeBuild/
+
+.vs/aQordUiWPF/v16/
