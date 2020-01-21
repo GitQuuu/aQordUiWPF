@@ -25,12 +25,12 @@ namespace aQordUiWPF
 
         private void PickBricklayer(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Uri("BricklayerMenu.xaml", UriKind.Relative));
+            this.NavigationService.Navigate(new Uri(@"\View\BricklayerMenu\BricklayerMenu.xaml", UriKind.Relative));
         }
 
         private void PickCarpenter(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Uri("CarpenterMenu.xaml", UriKind.Relative));
+            this.NavigationService.Navigate(new Uri(@"\View\CarpenterMenu\CarpenterMenu.xaml", UriKind.Relative));
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
@@ -41,7 +41,7 @@ namespace aQordUiWPF
 
         private void PickConstructionPainter(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Uri("ConstructionPainterMenu.xaml", UriKind.Relative));
+            this.NavigationService.Navigate(new Uri(@"\View\ConstructionPainterMenu\ConstructionPainterMenu.xaml", UriKind.Relative));
         }
     }
 }
