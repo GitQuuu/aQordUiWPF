@@ -26,7 +26,7 @@ namespace aQordUiWPF
 
         private void Return_To_MainPage(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Uri("MainPage.xaml", UriKind.Relative));
+            this.NavigationService.Navigate(new Uri(@"\View\MainPageMenu\MainPage.xaml", UriKind.Relative));
             
         }
 
