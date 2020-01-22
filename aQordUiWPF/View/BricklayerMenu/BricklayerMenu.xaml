@@ -18,7 +18,20 @@
             <Button Content="Fugning" HorizontalAlignment="Left" Margin="840,414,0,0" VerticalAlignment="Top" Height="72" Width="135" FontWeight="Bold" Foreground="BurlyWood"/>
             <Button Content="Tilbage" HorizontalAlignment="Left" Margin="840,531,0,0" VerticalAlignment="Top" Height="72" Width="135" FontWeight="ExtraBold" Foreground="Red" Click="Return_To_MainPage"/>
 
-            <Expander Name="CreateUser" Header="Tilføj en murer til projektet" HorizontalAlignment="Left" Height="254" Margin="85,84,0,0" VerticalAlignment="Top" Width="915">
+            <Expander IsExpanded="False" Name="CreateUser" HorizontalAlignment="Left" Height="254" Margin="85,84,0,0" VerticalAlignment="Top" Width="915">
+                <Expander.Header>
+                    <DockPanel VerticalAlignment="Stretch">
+                        <TextBlock FontStyle="Italic" Foreground="Green" RenderTransformOrigin="0.5,0.5">
+                            <TextBlock.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="-1.15"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </TextBlock.RenderTransform>Tilføj en murer til sjakket</TextBlock>
+                    </DockPanel>
+                </Expander.Header>
                 <Grid Background="#FFE5E5E5" Margin="0,0,0,14" Width="860">
                     <TextBox Name="Id" HorizontalAlignment="Left" Margin="24,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41" Grid.ColumnSpan="3"/>
                     <TextBox Name="FirstName" Margin="185,55,529,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
@@ -36,6 +49,16 @@
                     </StackPanel>
                 </Grid>
 
+            </Expander>
+            <Expander IsExpanded="False" Name="WeeklySchema" HorizontalAlignment="Left" Margin="85,114,48,291">
+                <Expander.Header>
+                    <DockPanel VerticalAlignment="Stretch">
+                        <TextBlock Foreground="Blue" FontStyle="Italic">Uge skema</TextBlock>
+                    </DockPanel>
+                </Expander.Header>
+                <Grid Width="907">
+                    
+                </Grid>
             </Expander>
         </Grid>
     </Grid>
