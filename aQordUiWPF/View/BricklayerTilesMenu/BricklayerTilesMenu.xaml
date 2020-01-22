@@ -11,7 +11,7 @@
     <Grid>
         <TextBlock FontSize="52" HorizontalAlignment="Center">Fliser</TextBlock>
 
-        <Grid Name="BricklayerIndex">
+        <Grid Name="Subjects">
             <Button Content="Klargøring" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Bold" Foreground="BurlyWood"/>
             <Button Content="Vådrum" HorizontalAlignment="Left" Margin="170,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="DemiBold" Foreground="BlueViolet" />
             <Button Content="Væg fliser" HorizontalAlignment="Left" Margin="320,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Heavy" Foreground="Brown"/>
