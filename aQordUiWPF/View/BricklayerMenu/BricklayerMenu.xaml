@@ -21,7 +21,7 @@
             <Expander Name="CreateUser" Header="Tilføj en murer til projektet" HorizontalAlignment="Left" Height="254" Margin="85,84,0,0" VerticalAlignment="Top" Width="915">
                 <Grid Background="#FFE5E5E5" Margin="0,0,0,14" Width="860">
                     <TextBox Name="Id" HorizontalAlignment="Left" Margin="24,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41" Grid.ColumnSpan="3"/>
-                    <TextBox Name="Name" Margin="185,55,529,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
+                    <TextBox Name="FirstName" Margin="185,55,529,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
                     <TextBox Name="LastName" HorizontalAlignment="Center" Margin="0,55,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
                     <TextBox Name="HourlyRate" HorizontalAlignment="Left" Margin="526,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
                     <TextBox Name="WeeklyHours" HorizontalAlignment="Left" Margin="692,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
