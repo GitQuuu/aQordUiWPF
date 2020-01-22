@@ -13,7 +13,7 @@
         </TextBlock>
         <TextBlock FontSize="22" HorizontalAlignment="Center" Margin="0,121,0,0" Text="Vælg følgende branche som passer til dit projekt" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="488"/>
         <Grid Name="HomeIndex">
-            <Button Content="Murer" HorizontalAlignment="Left" Margin="45,0,0,0" VerticalAlignment="Center" Height="72" Width="135" Click="PickBricklayer" FontWeight="Bold" Foreground="BurlyWood"/>
+            <Button  Content="Murer" HorizontalAlignment="Left" Margin="45,0,0,0" VerticalAlignment="Center" Height="72" Width="135" Click="PickBricklayer" FontWeight="Bold" Foreground="BurlyWood"/>
             <Button Content="Tømrer" HorizontalAlignment="Left" Margin="231,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="DemiBold" Foreground="BlueViolet" Click="PickCarpenter" />
             <Button Content="Maler" HorizontalAlignment="Left" Margin="421,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Heavy" Foreground="Brown" Click="PickConstructionPainter"/>
             <Button Content="VVS" HorizontalAlignment="Left" Margin="597,0,0,0" VerticalAlignment="Center" Height="72" Width="135" FontWeight="Bold" Foreground="Teal" />
