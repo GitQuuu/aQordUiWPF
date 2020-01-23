@@ -43,7 +43,7 @@
                     <Label Content="Navn" HorizontalAlignment="Left" Height="29" Margin="185,10,0,0" VerticalAlignment="Top" Width="146"/>
                     <Label Content="Efternavn" HorizontalAlignment="Center" Height="29" Margin="0,10,0,0" VerticalAlignment="Top" Width="146"/>
                     <Label Content="Løn i timen" HorizontalAlignment="Left" Height="29" Margin="526,7,0,0" VerticalAlignment="Top" Width="146"/>
-                    <Label Content="Ugentlig arbejdstid pr. dag" HorizontalAlignment="Left" Height="29" Margin="692,10,0,0" VerticalAlignment="Top" Width="159"/>
+                    <Label Content="Ugentlig arbejdstimer" HorizontalAlignment="Left" Height="29" Margin="692,10,0,0" VerticalAlignment="Top" Width="159"/>
                     <StackPanel VerticalAlignment="Bottom">
                         <Button Content="Fortryd"/>
                         <Button Content="Gem" Click="SavedClick" />

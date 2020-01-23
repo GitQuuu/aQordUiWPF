@@ -18,12 +18,6 @@ namespace aQordUiWPF
     /// </summary>
     public partial class BricklayerMenu : Page
     {
-        private readonly Craftsman _craftsman;
-
-        public BricklayerMenu(Craftsman craftsman)
-        {
-            _craftsman = craftsman;
-        }
         public BricklayerMenu()
         {
             InitializeComponent();
@@ -40,7 +34,7 @@ namespace aQordUiWPF
         {
             this.NavigationService.Navigate(new Uri(@"\View\BricklayerTilesMenu\BricklayerTilesMenu.xaml", UriKind.Relative));
         }
-
+        
         private void SavedClick(object sender, RoutedEventArgs e)
         {
             Craftsman bricklayer = new Craftsman()
