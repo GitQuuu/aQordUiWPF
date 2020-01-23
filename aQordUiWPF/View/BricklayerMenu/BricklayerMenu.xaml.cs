@@ -43,7 +43,16 @@ namespace aQordUiWPF
 
         private void SavedClick(object sender, RoutedEventArgs e)
         {
-            
+            Craftsman bricklayer = new Craftsman()
+            {
+                Id = Convert.ToInt32(Id.Text),
+                FirstName = Convert.ToString(FirstName.Text),
+                LastName = Convert.ToString(LastName.Text),
+                HourlyRate = Convert.ToDecimal(HourlyRate.Text),
+                WorkingHourWeekly = Convert.ToDouble(WeeklyHours.Text),
+            };
+
+            Craftsman.bricklayerList.Add(bricklayer);
 
         }
     }
