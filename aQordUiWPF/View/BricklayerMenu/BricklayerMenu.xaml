@@ -32,22 +32,34 @@
                             </TextBlock.RenderTransform>Tilføj en murer til sjakket</TextBlock>
                     </DockPanel>
                 </Expander.Header>
-                <Grid Background="#FFE5E5E5" Margin="0,0,0,14" Width="860">
-                    
-                    <TextBox Name="Id" HorizontalAlignment="Left" Margin="24,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41" Grid.ColumnSpan="3"/>
-                    <TextBox Name="FirstName" Margin="185,55,529,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
-                    <TextBox Name="LastName" HorizontalAlignment="Center" Margin="0,55,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
-                    <TextBox Name="HourlyRate" HorizontalAlignment="Left" Margin="526,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
-                    <TextBox Name="WeeklyHours" HorizontalAlignment="Left" Margin="692,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
+                <Grid Background="#FFE5E5E5" Margin="0,0,0,14" Width="879">
+
+                    <TextBox Name="Id" HorizontalAlignment="Left" Margin="24,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
+                    <TextBox Name="FirstName" Margin="185,44,529,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
+                    <TextBox Name="LastName" HorizontalAlignment="Center" Margin="0,44,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
+                    <TextBox Name="HourlyRate" HorizontalAlignment="Left" Margin="526,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
+                    <TextBox Name="WeeklyHours" HorizontalAlignment="Left" Margin="692,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
                     <Label Content="ID" HorizontalAlignment="Left" Height="29" Margin="24,10,0,0" VerticalAlignment="Top" Width="146" Grid.ColumnSpan="3"/>
                     <Label Content="Navn" HorizontalAlignment="Left" Height="29" Margin="185,10,0,0" VerticalAlignment="Top" Width="146"/>
                     <Label Content="Efternavn" HorizontalAlignment="Center" Height="29" Margin="0,10,0,0" VerticalAlignment="Top" Width="146"/>
                     <Label Content="Løn i timen" HorizontalAlignment="Left" Height="29" Margin="526,7,0,0" VerticalAlignment="Top" Width="146"/>
-                    <Label Content="Ugentlig arbejdstid pr. dag" HorizontalAlignment="Left" Height="29" Margin="692,10,0,0" VerticalAlignment="Top" Width="146"/>
+                    <Label Content="Ugentlig arbejdstid pr. dag" HorizontalAlignment="Left" Height="29" Margin="692,10,0,0" VerticalAlignment="Top" Width="159"/>
                     <StackPanel VerticalAlignment="Bottom">
                         <Button Content="Fortryd"/>
                         <Button Content="Gem" Click="SavedClick" />
                     </StackPanel>
+                    <Label Content="Profession" HorizontalAlignment="Left" Height="29" Margin="24,0,0,0" VerticalAlignment="Center" Width="146"/>
+                    <ComboBox HorizontalAlignment="Left" Margin="24,123,0,0" VerticalAlignment="Top" Width="307" Height="31">
+                        <ComboBoxItem>
+                            <TextBlock>Muresvend</TextBlock>
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock>Lærling</TextBlock>
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock>Arbejdsmand</TextBlock>
+                        </ComboBoxItem>
+                    </ComboBox>
                 </Grid>
             </Expander>
         </Grid>
