@@ -16,7 +16,7 @@
             <Button Content="Støbning" HorizontalAlignment="Center" VerticalAlignment="Top" Height="72" Width="136" FontWeight="Heavy" Foreground="Brown" Margin="0,414,0,0"/>
             <Button Content="Puds" HorizontalAlignment="Left" Margin="647,414,0,0" VerticalAlignment="Top" Height="72" Width="135" FontWeight="Bold" Foreground="Teal" />
             <Button Content="Fugning" HorizontalAlignment="Left" Margin="840,414,0,0" VerticalAlignment="Top" Height="72" Width="135" FontWeight="Bold" Foreground="BurlyWood"/>
-            <Button Content="Tilbage" HorizontalAlignment="Left" Margin="840,531,0,0" VerticalAlignment="Top" Height="72" Width="135" FontWeight="ExtraBold" Foreground="Red" Click="Return_To_MainPage"/>
+            <Button Content="Tilbage" HorizontalAlignment="Left" Margin="840,531,0,0" VerticalAlignment="Top" Height="72" Width="135" FontWeight="ExtraBold" Foreground="Red" Click="ReturnToMainPage"/>
 
             <Expander IsExpanded="False" Name="CreateUser" HorizontalAlignment="Left" Height="254" Margin="85,84,0,0" VerticalAlignment="Top" Width="915">
                 <Expander.Header>
@@ -33,6 +33,7 @@
                     </DockPanel>
                 </Expander.Header>
                 <Grid Background="#FFE5E5E5" Margin="0,0,0,14" Width="860">
+                    
                     <TextBox Name="Id" HorizontalAlignment="Left" Margin="24,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41" Grid.ColumnSpan="3"/>
                     <TextBox Name="FirstName" Margin="185,55,529,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
                     <TextBox Name="LastName" HorizontalAlignment="Center" Margin="0,55,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
@@ -45,19 +46,8 @@
                     <Label Content="Ugentlig arbejdstid pr. dag" HorizontalAlignment="Left" Height="29" Margin="692,10,0,0" VerticalAlignment="Top" Width="146"/>
                     <StackPanel VerticalAlignment="Bottom">
                         <Button Content="Fortryd"/>
-                        <Button Content="Gem"/>
+                        <Button Content="Gem" Click="SavedClick" />
                     </StackPanel>
-                </Grid>
-
-            </Expander>
-            <Expander IsExpanded="False" Name="WeeklySchema" HorizontalAlignment="Left" Margin="85,114,48,291">
-                <Expander.Header>
-                    <DockPanel VerticalAlignment="Stretch">
-                        <TextBlock Foreground="Blue" FontStyle="Italic">Uge skema</TextBlock>
-                    </DockPanel>
-                </Expander.Header>
-                <Grid Width="907">
-                    
                 </Grid>
             </Expander>
         </Grid>
