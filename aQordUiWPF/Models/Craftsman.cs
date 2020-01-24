@@ -12,9 +12,6 @@ namespace aQordUiWPF
 {
     public class Craftsman
     {
-        public static readonly List<Craftsman> bricklayerList = new List<Craftsman>();
-        public static readonly List<Craftsman> carpenterList = new List<Craftsman>();
-
         public int Id { get; set; }
         public string Profession { get; set; }
         public string FirstName { get; set; }
