@@ -18,6 +18,9 @@ namespace aQordUiWPF
     /// </summary>
     public partial class BricklayerMenu : Page
     {
+        public static List<Craftsman> bricklayerList = new List<Craftsman>();
+        public static List<Craftsman> carpenterList = new List<Craftsman>();
+
         public BricklayerMenu()
         {
             InitializeComponent();
@@ -26,13 +29,13 @@ namespace aQordUiWPF
 
         private void ReturnToMainPage(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Uri(@"\View\MainPageMenu\MainPage.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri(@"\View\MainPageMenu\MainPage.xaml", UriKind.Relative));
             
         }
 
         private void PickTiles(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Uri(@"\View\BricklayerTilesMenu\BricklayerTilesMenu.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri(@"\View\BricklayerTilesMenu\BricklayerTilesMenu.xaml", UriKind.Relative));
         }
         
         private void SavedClick(object sender, RoutedEventArgs e)
@@ -46,7 +49,8 @@ namespace aQordUiWPF
                 WorkingHourWeekly = Convert.ToDouble(WeeklyHours.Text),
             };
 
-            Craftsman.bricklayerList.Add(bricklayer);
+            bricklayerList.Add(bricklayer);
+            
 
         }
     }
