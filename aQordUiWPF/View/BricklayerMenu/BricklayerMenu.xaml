@@ -50,13 +50,13 @@
                     </StackPanel>
                     <Label Content="Profession" HorizontalAlignment="Left" Height="29" Margin="24,0,0,0" VerticalAlignment="Center" Width="146"/>
                     <ComboBox HorizontalAlignment="Left" Margin="24,123,0,0" VerticalAlignment="Top" Width="307" Height="31">
-                        <ComboBoxItem>
+                        <ComboBoxItem Name="BoxItem1">
                             <TextBlock>Muresvend</TextBlock>
                         </ComboBoxItem>
-                        <ComboBoxItem>
+                        <ComboBoxItem Name="BoxItem2">
                             <TextBlock>Lærling</TextBlock>
                         </ComboBoxItem>
-                        <ComboBoxItem>
+                        <ComboBoxItem Name="BoxItem3">
                             <TextBlock>Arbejdsmand</TextBlock>
                         </ComboBoxItem>
                     </ComboBox>
