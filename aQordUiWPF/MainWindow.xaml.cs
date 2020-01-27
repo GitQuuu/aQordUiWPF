@@ -24,6 +24,8 @@ namespace aQordUiWPF
         {
             InitializeComponent();
             _NavigationFrame.Navigate(new MainPage());
+
+            
         }
 
     }

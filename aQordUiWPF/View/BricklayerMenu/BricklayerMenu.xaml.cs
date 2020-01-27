@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using aQordUiWPF.ViewModels;
 
 namespace aQordUiWPF
 {
@@ -24,6 +25,7 @@ namespace aQordUiWPF
         public BricklayerMenu()
         {
             InitializeComponent();
+            StackPanelForCRUD.DataContext = new ExpanderListViewModel();
         }
 
 
@@ -37,7 +39,7 @@ namespace aQordUiWPF
         {
             NavigationService.Navigate(new Uri(@"\View\BricklayerTilesMenu\BricklayerTilesMenu.xaml", UriKind.Relative));
         }
-        
+
         private void SavedClick(object sender, RoutedEventArgs e)
         {
             Craftsman bricklayer = new Craftsman()
@@ -50,7 +52,7 @@ namespace aQordUiWPF
             };
 
             bricklayerList.Add(bricklayer);
-            
+
 
         }
     }
