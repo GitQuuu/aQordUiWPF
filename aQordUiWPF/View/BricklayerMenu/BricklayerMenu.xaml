@@ -19,7 +19,7 @@
             <Button Content="Fugning" HorizontalAlignment="Left" Margin="840,414,0,0" VerticalAlignment="Top" Height="72" Width="135" FontWeight="Bold" Foreground="BurlyWood"/>
             <Button Content="Tilbage" HorizontalAlignment="Left" Margin="840,531,0,0" VerticalAlignment="Top" Height="72" Width="135" FontWeight="ExtraBold" Foreground="Red" Click="ReturnToMainPage"/>
 
-            <Grid>
+            <Grid Name="GridCRUD">
                 <StackPanel Name="StackPanelForCRUD">
                     <StackPanel.Resources>
                         <utility:ExpanderToBooleanConverter x:Key="ExpanderToBooleanConverter"/>
