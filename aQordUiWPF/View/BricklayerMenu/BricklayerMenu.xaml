@@ -20,11 +20,11 @@
             <Button Content="Tilbage" HorizontalAlignment="Left" Margin="840,531,0,0" VerticalAlignment="Top" Height="72" Width="135" FontWeight="ExtraBold" Foreground="Red" Click="ReturnToMainPage"/>
 
             <Grid Name="GridCRUD">
-                <StackPanel Name="StackPanelForCRUD">
+                <StackPanel Name="StackPanelForCRUD" Margin="80,89,43,294">
                     <StackPanel.Resources>
                         <utility:ExpanderToBooleanConverter x:Key="ExpanderToBooleanConverter"/>
                     </StackPanel.Resources>
-                    <Expander Header="Create"
+                    <Expander Header="Tilføj en murer"
                               IsExpanded="{Binding SelectedExpander, Converter={StaticResource ExpanderToBooleanConverter}, ConverterParameter=1, Mode=TwoWay}">
                         <Grid Name="Create" Background="#FFE5E5E5" Width="878" Height="209">
 
@@ -56,22 +56,22 @@
                             </ComboBox>
                         </Grid>
                     </Expander>
-                    <Expander Header="Read"
+                    <Expander Header="Vis alle/en"
                               IsExpanded="{Binding SelectedExpander, Converter={StaticResource ExpanderToBooleanConverter}, ConverterParameter=2, Mode=TwoWay}">
-                        <Grid Background="Aqua" Width="878" Height="209">
+                        <Grid Name="Read" Background="Aqua" Width="878" Height="209">
 
                         </Grid>
 
                     </Expander>
-                    <Expander Header="Update"
+                    <Expander Header="Opdatere eksisterende"
                               IsExpanded="{Binding SelectedExpander, Converter={StaticResource ExpanderToBooleanConverter}, ConverterParameter=3, Mode=TwoWay}">
-                        <Grid Background="PaleVioletRed" Width="878" Height="209">
+                        <Grid Name="Update" Background="PaleVioletRed" Width="878" Height="209">
 
                         </Grid>
                     </Expander>
-                    <Expander Header="Delete"
+                    <Expander Header="Slet "
                               IsExpanded="{Binding SelectedExpander, Converter={StaticResource ExpanderToBooleanConverter}, ConverterParameter=4, Mode=TwoWay}">
-                        <Grid Background="LightGreen" Width="878" Height="209">
+                        <Grid Name="Delete" Background="LightGreen" Width="878" Height="209">
 
                         </Grid>
                     </Expander>
