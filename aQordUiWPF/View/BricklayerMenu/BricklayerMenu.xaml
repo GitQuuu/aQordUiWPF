@@ -19,12 +19,12 @@
             <Button Content="Fugning" HorizontalAlignment="Left" Margin="840,414,0,0" VerticalAlignment="Top" Height="72" Width="135" FontWeight="Bold" Foreground="BurlyWood"/>
             <Button Content="Tilbage" HorizontalAlignment="Left" Margin="840,531,0,0" VerticalAlignment="Top" Height="72" Width="135" FontWeight="ExtraBold" Foreground="Red" Click="ReturnToMainPage"/>
 
-            <Grid>
-                <StackPanel Name="StackPanelForCRUD">
+            <Grid Name="GridCRUD">
+                <StackPanel Name="StackPanelForCRUD" Margin="78,107,0,0">
                     <StackPanel.Resources>
                         <utility:ExpanderToBooleanConverter x:Key="ExpanderToBooleanConverter"/>
                     </StackPanel.Resources>
-                    <Expander Header="Create"
+                    <Expander Header="Tilføj en murer"
                               IsExpanded="{Binding SelectedExpander, Converter={StaticResource ExpanderToBooleanConverter}, ConverterParameter=1, Mode=TwoWay}">
                         <Grid Name="Create" Background="#FFE5E5E5" Width="878" Height="209">
 
@@ -56,7 +56,7 @@
                             </ComboBox>
                         </Grid>
                     </Expander>
-                    <Expander Header="Read"
+                    <Expander Header="Vis alle / find en bestemt murer"
                               IsExpanded="{Binding SelectedExpander, Converter={StaticResource ExpanderToBooleanConverter}, ConverterParameter=2, Mode=TwoWay}">
                         <Grid Background="Aqua" Width="878" Height="209">
 
