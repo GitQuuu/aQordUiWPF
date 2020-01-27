@@ -40,6 +40,8 @@ namespace aQordUiWPF
             NavigationService.Navigate(new Uri(@"\View\BricklayerTilesMenu\BricklayerTilesMenu.xaml", UriKind.Relative));
         }
 
+        
+
         private void SavedClick(object sender, RoutedEventArgs e)
         {
             Craftsman bricklayer = new Craftsman()
@@ -53,7 +55,7 @@ namespace aQordUiWPF
 
             bricklayerList.Add(bricklayer);
 
-
+            MessageBox.Show("Gemt","Gemt",MessageBoxButton.OK,MessageBoxImage.Asterisk);
         }
     }
 }
