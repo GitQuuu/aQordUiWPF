@@ -19,58 +19,67 @@
             <Button Content="Fugning" HorizontalAlignment="Left" Margin="840,414,0,0" VerticalAlignment="Top" Height="72" Width="135" FontWeight="Bold" Foreground="BurlyWood"/>
             <Button Content="Tilbage" HorizontalAlignment="Left" Margin="840,531,0,0" VerticalAlignment="Top" Height="72" Width="135" FontWeight="ExtraBold" Foreground="Red" Click="ReturnToMainPage"/>
 
-
-            <StackPanel Name="StackPanelForCRUD">
-                <StackPanel.Resources>
-                    <utility:ExpanderToBooleanConverter x:Key="ExpanderToBooleanConverter"/>
-                </StackPanel.Resources>
-                <Expander Header="Create"
+            <Grid>
+                <StackPanel Name="StackPanelForCRUD">
+                    <StackPanel.Resources>
+                        <utility:ExpanderToBooleanConverter x:Key="ExpanderToBooleanConverter"/>
+                    </StackPanel.Resources>
+                    <Expander Header="Create"
                               IsExpanded="{Binding SelectedExpander, Converter={StaticResource ExpanderToBooleanConverter}, ConverterParameter=1, Mode=TwoWay}">
-                    <Grid Background="#FFE5E5E5" Width="878" Height="209">
+                        <Grid Name="Create" Background="#FFE5E5E5" Width="878" Height="209">
 
-                        <TextBox x:Name="Id" HorizontalAlignment="Left" Margin="10,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="40"/>
-                        <TextBox x:Name="FirstName" Margin="171,100,561,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
-                        <TextBox x:Name="LastName" HorizontalAlignment="Left" Margin="348,99,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
-                        <TextBox x:Name="HourlyRate" HorizontalAlignment="Left" Margin="515,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41" RenderTransformOrigin="0.349,2.024"/>
-                        <TextBox x:Name="WeeklyHours" HorizontalAlignment="Left" Margin="692,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
-                        <Label Content="ID" HorizontalAlignment="Left" Height="28" Margin="18,72,0,0" VerticalAlignment="Top" Width="146"/>
-                        <Label Content="Navn" HorizontalAlignment="Left" Height="28" Margin="171,69,0,0" VerticalAlignment="Top" Width="146"/>
-                        <Label Content="Efternavn" HorizontalAlignment="Left" Height="30" Margin="348,64,0,0" VerticalAlignment="Top" Width="146"/>
-                        <Label Content="Løn i timen" HorizontalAlignment="Left" Height="29" Margin="515,61,0,0" VerticalAlignment="Top" Width="146"/>
-                        <Label Content="Ugentlig arbejdstimer" HorizontalAlignment="Left" Height="29" Margin="692,64,0,0" VerticalAlignment="Top" Width="159"/>
-                        <StackPanel VerticalAlignment="Bottom">
-                            <Button Content="Fortryd"/>
-                            <Button Content="Gem" Click="SavedClick" />
-                        </StackPanel>
-                        <Label Content="Stilling" HorizontalAlignment="Left" Height="29" Margin="10,4,0,0" VerticalAlignment="Top" Width="146"/>
-                        <ComboBox HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" Width="307" Height="30">
-                            <ComboBoxItem x:Name="BoxItem1">
-                                <TextBlock><Run Text="Muresvend"/></TextBlock>
-                            </ComboBoxItem>
-                            <ComboBoxItem x:Name="BoxItem2">
-                                <TextBlock><Run Text="Lærling"/></TextBlock>
-                            </ComboBoxItem>
-                            <ComboBoxItem x:Name="BoxItem3">
-                                <TextBlock><Run Text="Arbejdsmand"/></TextBlock>
-                            </ComboBoxItem>
-                        </ComboBox>
-                    </Grid>
-                </Expander>
-                <Expander Header="Read"
+                            <TextBox x:Name="Id" HorizontalAlignment="Left" Margin="10,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="40"/>
+                            <TextBox x:Name="FirstName" Margin="171,100,561,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
+                            <TextBox x:Name="LastName" HorizontalAlignment="Left" Margin="336,100,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
+                            <TextBox x:Name="HourlyRate" HorizontalAlignment="Left" Margin="500,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41" RenderTransformOrigin="0.349,2.024"/>
+                            <TextBox x:Name="WeeklyHours" HorizontalAlignment="Left" Margin="672,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
+                            <Label Content="ID" HorizontalAlignment="Left" Height="28" Margin="10,72,0,0" VerticalAlignment="Top" Width="146"/>
+                            <Label Content="Navn" HorizontalAlignment="Left" Height="28" Margin="171,69,0,0" VerticalAlignment="Top" Width="146"/>
+                            <Label Content="Efternavn" HorizontalAlignment="Left" Height="30" Margin="336,63,0,0" VerticalAlignment="Top" Width="146"/>
+                            <Label Content="Løn i timen" HorizontalAlignment="Left" Height="29" Margin="500,65,0,0" VerticalAlignment="Top" Width="146"/>
+                            <Label Content="Ugentlig arbejdstimer" HorizontalAlignment="Left" Height="29" Margin="672,62,0,0" VerticalAlignment="Top" Width="159"/>
+                            <StackPanel VerticalAlignment="Bottom">
+                                <Button Content="Fortryd"/>
+                                <Button Content="Gem" Click="SavedClick" />
+                            </StackPanel>
+                            <Label Content="Stilling" HorizontalAlignment="Left" Height="29" Margin="10,4,0,0" VerticalAlignment="Top" Width="146"/>
+                            <ComboBox HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" Width="307" Height="30">
+                                <ComboBoxItem x:Name="BoxItem1">
+                                    <TextBlock><Run Text="Muresvend"/></TextBlock>
+                                </ComboBoxItem>
+                                <ComboBoxItem x:Name="BoxItem2">
+                                    <TextBlock><Run Text="Lærling"/></TextBlock>
+                                </ComboBoxItem>
+                                <ComboBoxItem x:Name="BoxItem3">
+                                    <TextBlock><Run Text="Arbejdsmand"/></TextBlock>
+                                </ComboBoxItem>
+                            </ComboBox>
+                        </Grid>
+                    </Expander>
+                    <Expander Header="Read"
                               IsExpanded="{Binding SelectedExpander, Converter={StaticResource ExpanderToBooleanConverter}, ConverterParameter=2, Mode=TwoWay}">
-                    <TextBlock><Run Text="Expander 2"/></TextBlock>
-                </Expander>
-                <Expander Header="Update"
+                        <Grid Background="Aqua" Width="878" Height="209">
+
+                        </Grid>
+
+                    </Expander>
+                    <Expander Header="Update"
                               IsExpanded="{Binding SelectedExpander, Converter={StaticResource ExpanderToBooleanConverter}, ConverterParameter=3, Mode=TwoWay}">
-                    <TextBlock><Run Text="Expander 3"/></TextBlock>
-                </Expander>
-                <Expander Header="Delete"
+                        <Grid Background="PaleVioletRed" Width="878" Height="209">
+
+                        </Grid>
+                    </Expander>
+                    <Expander Header="Delete"
                               IsExpanded="{Binding SelectedExpander, Converter={StaticResource ExpanderToBooleanConverter}, ConverterParameter=4, Mode=TwoWay}">
-                    <TextBlock><Run Text="Expander 4"/></TextBlock>
-                </Expander>
+                        <Grid Background="LightGreen" Width="878" Height="209">
 
-            </StackPanel>
+                        </Grid>
+                    </Expander>
 
+                </StackPanel>
+
+
+            </Grid>
 
 
             <!--<Expander IsExpanded="False" Name="CreateUser" HorizontalAlignment="Left" Height="254" Margin="85,84,0,0" VerticalAlignment="Top" Width="915">
