@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using aQordUiWPF.View.CarpenterList;
 using aQordUiWPF.ViewModels;
 
 namespace aQordUiWPF
@@ -76,6 +77,8 @@ namespace aQordUiWPF
         
         private void ShowAll(object sender, RoutedEventArgs e)
         {
+           CarpenterList carpenterListWindow = new CarpenterList();
+           carpenterListWindow.Show();
            
         }
 
