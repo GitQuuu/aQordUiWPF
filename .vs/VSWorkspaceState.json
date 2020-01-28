@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\aQordUiWPF",
+    "\\aQordUiWPF\\View",
+    "\\aQordUiWPF\\View\\BricklayerMenu"
   ],
-  "SelectedNode": "\\aQordUiWPF.sln",
+  "SelectedNode": "\\aQordUiWPF\\View\\CarpenterMenu",
   "PreviewInSolutionExplorer": false
 }
