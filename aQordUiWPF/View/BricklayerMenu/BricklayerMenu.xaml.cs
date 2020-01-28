@@ -72,5 +72,16 @@ namespace aQordUiWPF
             MessageBox.Show("Reset", "Not added", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
+
+        
+        private void ShowAll(object sender, RoutedEventArgs e)
+        {
+           
+        }
+
+        private void ShowSpecific(object sender,RoutedEventArgs e, int id)
+        {
+
+        }
     }
 }
