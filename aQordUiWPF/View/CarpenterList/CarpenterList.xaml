@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="CarpenterList" Height="450" Width="800">
     <Grid Background="Aquamarine">
-        
+        <DataGrid>
+
+        </DataGrid>
+
     </Grid>
 </Window>

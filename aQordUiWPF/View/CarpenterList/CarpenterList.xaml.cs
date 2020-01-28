@@ -21,5 +21,7 @@ namespace aQordUiWPF.View.CarpenterList
         {
             InitializeComponent();
         }
+
+
     }
 }

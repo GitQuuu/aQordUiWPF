@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -20,7 +21,7 @@ namespace aQordUiWPF
     /// </summary>
     public partial class BricklayerMenu : Page
     {
-        public static List<Craftsman> bricklayerList = new List<Craftsman>();
+        public static ObservableCollection<Craftsman> bricklayerList = new ObservableCollection<Craftsman>();
         public static List<Craftsman> carpenterList = new List<Craftsman>();
 
         public BricklayerMenu()
