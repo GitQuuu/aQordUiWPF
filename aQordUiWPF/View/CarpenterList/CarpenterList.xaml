@@ -7,7 +7,13 @@
         mc:Ignorable="d"
         Title="CarpenterList" Height="450" Width="800">
     <Grid Background="Aquamarine">
-        <DataGrid>
+        <DataGrid BorderThickness="1" Name="DataGridView" Margin="0,44,0,62">
+            <DataGrid.Columns>
+                <DataGridTextColumn ></DataGridTextColumn>
+                <DataGridTextColumn></DataGridTextColumn>
+                <DataGridTextColumn></DataGridTextColumn>
+                <DataGridTextColumn></DataGridTextColumn>
+            </DataGrid.Columns>
 
         </DataGrid>
 
