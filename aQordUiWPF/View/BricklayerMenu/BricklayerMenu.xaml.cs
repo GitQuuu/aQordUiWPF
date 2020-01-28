@@ -57,5 +57,20 @@ namespace aQordUiWPF
 
             MessageBox.Show("Gemt","Gemt",MessageBoxButton.OK,MessageBoxImage.Asterisk);
         }
+
+        private void ResetClick(object sender, RoutedEventArgs e)
+        {
+            Id.Text = String.Empty;
+            FirstName.Text = String.Empty;
+            LastName.Text = String.Empty;
+            HourlyRate.Text = String.Empty;
+            WeeklyHours.Text = String.Empty;
+            BoxItemBricklayer = null; // not working yet
+            BoxItem2Apprentice = null; // not working yet
+            BoxItem3Workingman = null; // not working yet
+
+            MessageBox.Show("Reset", "Not added", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
     }
 }
