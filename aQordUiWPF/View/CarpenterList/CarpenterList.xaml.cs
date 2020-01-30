@@ -22,6 +22,7 @@ namespace aQordUiWPF.View.CarpenterList
         public CarpenterList()
         {
             InitializeComponent();
+            this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             ReadAllFromList();
         }
 

@@ -20,10 +20,5 @@ namespace aQordUiWPF
         public double WorkingHourDaily { get; set; }
         public double WorkingHourWeekly { get; set; }
 
-
-        public void PrintInfo()
-        {
-            Console.WriteLine($"{Id},{Profession},{FirstName},{LastName},{HourlyRate},{WorkingHourDaily},{WorkingHourWeekly}");
-        }
     }
 }
