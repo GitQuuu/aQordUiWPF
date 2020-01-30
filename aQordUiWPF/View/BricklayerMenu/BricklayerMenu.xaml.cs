@@ -28,6 +28,11 @@ namespace aQordUiWPF
         {
             InitializeComponent();
             StackPanelForCRUD.DataContext = new ExpanderListViewModel();
+
+            // this is to populate our list for testing
+            BricklayerList.Add(new Craftsman { Id = 1, FirstName = "Qu", LastName = "Le", HourlyRate = 200, WorkingHourWeekly = 37 });
+            BricklayerList.Add(new Craftsman { Id = 2, FirstName = "Nicoline", LastName = "Le", HourlyRate = 250, WorkingHourWeekly = 32 });
+
         }
 
 
@@ -76,12 +81,13 @@ namespace aQordUiWPF
 
 
         
-        private void ShowAll(object sender, RoutedEventArgs e)
+        private void ShowAll_Clicked(object sender, RoutedEventArgs e)
         {
            CarpenterList carpenterListWindow = new CarpenterList();
            carpenterListWindow.Show();
            
         }
+
 
         private void ShowSpecific(object sender,RoutedEventArgs e, int id)
         {
