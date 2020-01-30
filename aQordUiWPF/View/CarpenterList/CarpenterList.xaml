@@ -6,16 +6,27 @@
         xmlns:local="clr-namespace:aQordUiWPF.View.CarpenterList"
         mc:Ignorable="d"
         Title="CarpenterList" Height="450" Width="800">
-    <Grid Background="Aquamarine">
-        <DataGrid BorderThickness="1" Name="DataGridView" Margin="0,44,0,62">
+    <Grid x:Name="GridForDataGrid" Background="Gray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <DataGrid x:Name="CraftsmenGrid" AlternatingRowBackground="White" CanUserAddRows="False"
+                  AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn ></DataGridTextColumn>
-                <DataGridTextColumn></DataGridTextColumn>
-                <DataGridTextColumn></DataGridTextColumn>
-                <DataGridTextColumn></DataGridTextColumn>
+                <DataGridTextColumn Header="ID"></DataGridTextColumn>
+                <DataGridTextColumn Header="Fornavn"></DataGridTextColumn>
+                <DataGridTextColumn Header="Efternavn"></DataGridTextColumn>
+                <DataGridTextColumn Header="Stilling"></DataGridTextColumn>
+                <DataGridTextColumn Header="Løn i timen"></DataGridTextColumn>
+                <DataGridTextColumn Header="Ugentlig arbejdstid"></DataGridTextColumn>
+
+
             </DataGrid.Columns>
-
         </DataGrid>
-
     </Grid>
 </Window>
