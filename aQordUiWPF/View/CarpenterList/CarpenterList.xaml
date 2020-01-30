@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:aQordUiWPF.View.CarpenterList"
         mc:Ignorable="d"
         Title="CarpenterList" Height="450" Width="800">
-    <Grid x:Name="GridForDataGrid" Background="Gray">
+    <Grid x:Name="GridForDataGrid" Background="Gray" Height="340">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
@@ -15,15 +15,25 @@
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
-        <DataGrid x:Name="CraftsmenGrid" AlternatingRowBackground="White" CanUserAddRows="False"
+        <DataGrid x:Name="DataGridXAMLCarpenterList" AlternatingRowBackground="White" CanUserAddRows="False"
                   AutoGenerateColumns="False">
+            <!--Font color / style of culumn headings-->
+            <DataGrid.Resources>
+              <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="Turquoise"></Setter>
+                    <Setter Property="FontWeight" Value="SemiBold"></Setter>
+                    <Setter Property="BorderThickness" Value="0,0,1,2"></Setter>
+                  <Setter Property="BorderBrush" Value="Black"></Setter>
+              </Style>
+            </DataGrid.Resources>
+            <!--Columnn header and bindings-->
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID"></DataGridTextColumn>
-                <DataGridTextColumn Header="Fornavn"></DataGridTextColumn>
-                <DataGridTextColumn Header="Efternavn"></DataGridTextColumn>
-                <DataGridTextColumn Header="Stilling"></DataGridTextColumn>
-                <DataGridTextColumn Header="Løn i timen"></DataGridTextColumn>
-                <DataGridTextColumn Header="Ugentlig arbejdstid"></DataGridTextColumn>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="FirstName" Header="Fornavn" Binding="{Binding FirstName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Efternavn" Binding="{Binding LastName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Stilling" Binding="{Binding Profession}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Løn i timen" Binding="{Binding HourlyRate}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Ugentlig arbejdstid" Binding="{Binding WorkingHourWeekly}"></DataGridTextColumn>
 
 
             </DataGrid.Columns>
