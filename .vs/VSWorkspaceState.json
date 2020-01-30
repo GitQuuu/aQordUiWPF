@@ -3,8 +3,9 @@
     "",
     "\\aQordUiWPF",
     "\\aQordUiWPF\\View",
-    "\\aQordUiWPF\\View\\BricklayerMenu"
+    "\\aQordUiWPF\\View\\BricklayerMenu",
+    "\\aQordUiWPF\\View\\CarpenterList"
   ],
-  "SelectedNode": "\\aQordUiWPF\\View\\CarpenterMenu",
+  "SelectedNode": "\\aQordUiWPF.sln",
   "PreviewInSolutionExplorer": false
 }
