@@ -59,7 +59,7 @@
                     <Expander Header="Vis alle/en"
                               IsExpanded="{Binding SelectedExpander, Converter={StaticResource ExpanderToBooleanConverter}, ConverterParameter=2, Mode=TwoWay}">
                         <Grid Name="Read" Background="Aqua" Width="878" Height="209">
-                            <Button Click="ShowAll" Margin="183,59,575,94">Vis alle</Button>
+                            <Button Click="ShowAll_Clicked" Margin="183,59,575,94">Vis alle</Button>
                             <Button Margin="551,59,207,94">Vis en</Button>
                         </Grid>
 
