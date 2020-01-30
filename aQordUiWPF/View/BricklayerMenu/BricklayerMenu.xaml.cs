@@ -89,10 +89,5 @@ namespace aQordUiWPF
            
         }
 
-
-        private void ShowSpecific(object sender,RoutedEventArgs e, int id)
-        {
-
-        }
     }
 }

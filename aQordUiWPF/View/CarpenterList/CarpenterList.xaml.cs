@@ -39,5 +39,6 @@ namespace aQordUiWPF.View.CarpenterList
                 DataGridXAMLCarpenterList.Items.Add(craftsman);
             }
         }
+
     }
 }

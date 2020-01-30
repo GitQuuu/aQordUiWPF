@@ -5,36 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:aQordUiWPF.View.CarpenterList"
         mc:Ignorable="d"
-        Title="CarpenterList" Height="450" Width="400">
-    <Grid x:Name="GridForDataGrid" Background="Gray" Height="434">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-        </Grid.RowDefinitions>
-        <DataGrid x:Name="DataGridXAMLCarpenterList" AlternatingRowBackground="White" CanUserAddRows="False" CanUserSortColumns="True" IsReadOnly="True" 
-                  AutoGenerateColumns="False" Grid.RowSpan="6">
-            <!--Font color / style of culumn headings-->
-            <DataGrid.Resources>
-              <Style TargetType="{x:Type DataGridColumnHeader}">
-                    <Setter Property="Background" Value="Turquoise"></Setter>
-                    <Setter Property="FontWeight" Value="SemiBold"></Setter>
-                    <Setter Property="BorderThickness" Value="0,0,1,2"></Setter>
-                  <Setter Property="BorderBrush" Value="Black"></Setter>
-              </Style>
-            </DataGrid.Resources>
-            <!--Columnn header and bindings-->
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding Id}"></DataGridTextColumn>
-                <DataGridTextColumn x:Name="FirstName" Header="Fornavn" Binding="{Binding FirstName}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Efternavn" Binding="{Binding LastName}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Stilling" Binding="{Binding Profession}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Løn i timen" Binding="{Binding HourlyRate}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Ugentlig arbejdstid" Width="*" Binding="{Binding WorkingHourWeekly}"></DataGridTextColumn>
-            </DataGrid.Columns>
-        </DataGrid>
-    </Grid>
+        Title="CarpenterList" Height="450" Width="800">
+  <Grid x:Name="GridForDataGrid" Background="Gray" Height="434">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="31*"/>
+      <ColumnDefinition Width="769*"/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="*"></RowDefinition>
+    </Grid.RowDefinitions>
+    <DataGrid x:Name="DataGridXAMLCarpenterList" AlternatingRowBackground="White" CanUserAddRows="False" CanUserSortColumns="True" IsReadOnly="True" 
+                  AutoGenerateColumns="False" Grid.RowSpan="6" Margin="15,10,20,200" Grid.ColumnSpan="2">
+      <!--Font color / style of culumn headings-->
+      <DataGrid.Resources>
+        <Style TargetType="{x:Type DataGridColumnHeader}">
+          <Setter Property="Background" Value="Turquoise"></Setter>
+          <Setter Property="FontWeight" Value="SemiBold"></Setter>
+          <Setter Property="BorderThickness" Value="0,0,1,2"></Setter>
+          <Setter Property="BorderBrush" Value="Black"></Setter>
+        </Style>
+      </DataGrid.Resources>
+      <!--Columnn header and bindings-->
+      <DataGrid.Columns>
+        <DataGridTextColumn Header="ID" Binding="{Binding Id}"></DataGridTextColumn>
+        <DataGridTextColumn Header="Fornavn" Binding="{Binding FirstName}"></DataGridTextColumn>
+        <DataGridTextColumn Header="Efternavn" Binding="{Binding LastName}"></DataGridTextColumn>
+        <DataGridTextColumn Header="Stilling" Binding="{Binding Profession}"></DataGridTextColumn>
+        <DataGridTextColumn Header="Løn i timen" Binding="{Binding HourlyRate}"></DataGridTextColumn>
+        <DataGridTextColumn Header="Ugentlig arbejdstid" Width="*" Binding="{Binding WorkingHourWeekly}"></DataGridTextColumn>
+      </DataGrid.Columns>
+    </DataGrid>
+    <Button Content="Opdatere" Grid.Column="1" HorizontalAlignment="Left" Height="57" Margin="165,276,0,0" Grid.RowSpan="6" VerticalAlignment="Top" Width="107"/>
+    <Button Content="Slet" Grid.Column="1" HorizontalAlignment="Left" Height="57" Margin="447,276,0,0" Grid.RowSpan="6" VerticalAlignment="Top" Width="107"/>
+
+  </Grid>
 </Window>
