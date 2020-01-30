@@ -22,11 +22,20 @@ namespace aQordUiWPF.View.CarpenterList
         public CarpenterList()
         {
             InitializeComponent();
+            ReadAllFromList();
         }
 
         public CarpenterList(BricklayerMenu bricklayerMenu)
         {
             _bricklayerMenu = bricklayerMenu;
+        }
+
+        private void ReadAllFromList()
+        {
+            foreach (Craftsman craftsman in BricklayerMenu.BricklayerList)
+            {
+                DataGridXAMLCarpenterList.Items.Add(craftsman);
+            }
         }
     }
 }
