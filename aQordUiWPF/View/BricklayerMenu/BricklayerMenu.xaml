@@ -43,7 +43,7 @@
                                 <Button Content="Gem" Click="SavedClick" />
                             </StackPanel>
                             <Label Content="Stilling" HorizontalAlignment="Left" Height="29" Margin="10,4,0,0" VerticalAlignment="Top" Width="146"/>
-                            <ComboBox HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" Width="307" Height="30">
+                            <ComboBox x:Name="ProfessionComboBox"  HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" Width="307" Height="30">
                                 <ComboBoxItem x:Name="BoxItemBricklayer">
                                     <TextBlock><Run Text="Muresvend"/></TextBlock>
                                 </ComboBoxItem>

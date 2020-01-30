@@ -27,11 +27,12 @@ namespace aQordUiWPF
         public BricklayerMenu()
         {
             InitializeComponent();
+            // for the Expander
             StackPanelForCRUD.DataContext = new ExpanderListViewModel();
 
             // this is to populate our list for testing
-            BricklayerList.Add(new Craftsman { Id = 1, FirstName = "Qu", LastName = "Le", HourlyRate = 200, WorkingHourWeekly = 37 });
-            BricklayerList.Add(new Craftsman { Id = 2, FirstName = "Nicoline", LastName = "Le", HourlyRate = 250, WorkingHourWeekly = 32 });
+            BricklayerList.Add(new Craftsman { Id = 1, FirstName = "Qu", LastName = "Le", Profession = "Murersvend",HourlyRate = 200, WorkingHourWeekly = 37 });
+            BricklayerList.Add(new Craftsman { Id = 2, FirstName = "Nicoline", LastName = "Le", Profession = "Lærling", HourlyRate = 250, WorkingHourWeekly = 32 });
 
         }
 
@@ -54,15 +55,16 @@ namespace aQordUiWPF
             Craftsman bricklayer = new Craftsman()
             {
                 Id = Convert.ToInt32(Id.Text),
-                FirstName = Convert.ToString(FirstName.Text),
-                LastName = Convert.ToString(LastName.Text),
+                FirstName = FirstName.Text,
+                LastName = LastName.Text,
+                Profession = ProfessionComboBox.Text,
                 HourlyRate = Convert.ToDecimal(HourlyRate.Text),
                 WorkingHourWeekly = Convert.ToDouble(WeeklyHours.Text),
+
             };
-
-            BricklayerList.Add(bricklayer);
-
-            MessageBox.Show("Gemt","Gemt",MessageBoxButton.OK,MessageBoxImage.Asterisk);
+                BricklayerList.Add(bricklayer);
+            
+                MessageBox.Show("Gemt", "Gemt", MessageBoxButton.OK, MessageBoxImage.Asterisk);
         }
 
         private void ResetClick(object sender, RoutedEventArgs e)
@@ -72,9 +74,7 @@ namespace aQordUiWPF
             LastName.Text = String.Empty;
             HourlyRate.Text = String.Empty;
             WeeklyHours.Text = String.Empty;
-            BoxItemBricklayer = null; // not working yet
-            BoxItem2Apprentice = null; // not working yet
-            BoxItem3Workingman = null; // not working yet
+            ProfessionComboBox.Text = String.Empty;
 
             MessageBox.Show("Reset", "Not added", MessageBoxButton.OK, MessageBoxImage.Information);
         }
@@ -84,6 +84,7 @@ namespace aQordUiWPF
         private void ShowAll_Clicked(object sender, RoutedEventArgs e)
         {
            CarpenterList carpenterListWindow = new CarpenterList();
+           
            carpenterListWindow.Show();
            
         }
