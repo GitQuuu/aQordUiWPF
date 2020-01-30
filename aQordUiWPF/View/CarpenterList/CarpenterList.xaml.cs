@@ -31,6 +31,7 @@ namespace aQordUiWPF.View.CarpenterList
             _bricklayerMenu = bricklayerMenu;
         }
 
+        // Method to add all Craftsman object to the Xaml by using the x:Name reference from CarpenterList.Xaml
         private void ReadAllFromList()
         {
             foreach (Craftsman craftsman in BricklayerMenu.BricklayerList)
