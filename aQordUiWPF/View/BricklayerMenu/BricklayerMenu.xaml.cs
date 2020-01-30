@@ -21,7 +21,7 @@ namespace aQordUiWPF
     /// </summary>
     public partial class BricklayerMenu : Page
     {
-        public static ObservableCollection<Craftsman> bricklayerList = new ObservableCollection<Craftsman>();
+        public static ObservableCollection<Craftsman> BricklayerList = new ObservableCollection<Craftsman>();
         public static List<Craftsman> carpenterList = new List<Craftsman>();
 
         public BricklayerMenu()
@@ -55,7 +55,7 @@ namespace aQordUiWPF
                 WorkingHourWeekly = Convert.ToDouble(WeeklyHours.Text),
             };
 
-            bricklayerList.Add(bricklayer);
+            BricklayerList.Add(bricklayer);
 
             MessageBox.Show("Gemt","Gemt",MessageBoxButton.OK,MessageBoxImage.Asterisk);
         }
