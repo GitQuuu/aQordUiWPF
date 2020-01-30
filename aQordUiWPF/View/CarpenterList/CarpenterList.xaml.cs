@@ -17,11 +17,16 @@ namespace aQordUiWPF.View.CarpenterList
     /// </summary>
     public partial class CarpenterList : Window
     {
+        private readonly BricklayerMenu _bricklayerMenu;
+
         public CarpenterList()
         {
             InitializeComponent();
         }
 
-
+        public CarpenterList(BricklayerMenu bricklayerMenu)
+        {
+            _bricklayerMenu = bricklayerMenu;
+        }
     }
 }
