@@ -40,7 +40,7 @@ namespace aQordUiWPF.View.CarpenterList
             }
         }
         // Method to Delete from the _bricklayerList and from the Xaml view look line 23 in xaml
-        private void DeleteClick(object sender, RoutedEventArgs e)
+        private void DeleteSelected(object sender, RoutedEventArgs e)
         {
             foreach (Craftsman craftsman in BricklayerMenu.BricklayerList)
             {
@@ -50,6 +50,14 @@ namespace aQordUiWPF.View.CarpenterList
                     BricklayerMenu.BricklayerList.Remove(craftsman);
                     return;
                 }
+            }
+        }
+
+        private void UpdateSelected(object sender, RoutedEventArgs e)
+        {
+            if (Update.IsChecked == true)
+            {
+                EditForm.Visibility = Visibility.Visible;
             }
         }
     }
