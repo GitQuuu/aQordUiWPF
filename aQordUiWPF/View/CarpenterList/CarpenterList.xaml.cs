@@ -83,7 +83,7 @@ namespace aQordUiWPF.View.CarpenterList
         {
             foreach (Craftsman craftsman in BricklayerMenu.BricklayerList)
             {
-                if (EditID.Text == craftsman.Id.ToString())
+                if (EditID.Text.Equals(craftsman.Id.ToString()))
                 {
                     craftsman.Id = Convert.ToInt32(EditID.Text);
                     craftsman.FirstName = EditFirstName.Text;
@@ -93,9 +93,15 @@ namespace aQordUiWPF.View.CarpenterList
                     craftsman.WorkingHourWeekly = Convert.ToInt32(EditWeeklyHours.Text);
 
                     DataGridXAMLCarpenterList.Items.Refresh();
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Fejl", "ID skal være identisk med eksisterende for at redigere", MessageBoxButton.OK, MessageBoxImage.Hand);
+                }
 
-                } 
-                // add some logic if ID doesnt excist
+                
+                // find out why elseBlock is callling even thou if block is running
                
             }
            
