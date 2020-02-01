@@ -70,6 +70,7 @@ namespace aQordUiWPF.View.CarpenterList
             if (DataGridXAMLCarpenterList.SelectedCells != null && DataGridXAMLCarpenterList.SelectedCells.Count > 0)
             {
                 EditForm.Visibility = Visibility.Visible;
+                //EditID.Text = (string)DataGridXAMLCarpenterList.CurrentCell.Item;
             }
             else
             {
@@ -80,7 +81,25 @@ namespace aQordUiWPF.View.CarpenterList
 
         private void EditSave(object sender, RoutedEventArgs e)
         {
+            foreach (Craftsman craftsman in BricklayerMenu.BricklayerList)
+            {
+                if (EditID.Text == craftsman.Id.ToString())
+                {
+                    craftsman.Id = Convert.ToInt32(EditID.Text);
+                    craftsman.FirstName = EditFirstName.Text;
+                    craftsman.LastName = EditLastName.Text;
+                    craftsman.Profession = EditProfession.Text;
+                    craftsman.HourlyRate = Convert.ToDecimal(EditHourlyRate.Text);
+                    craftsman.WorkingHourWeekly = Convert.ToInt32(EditWeeklyHours.Text);
+
+                    DataGridXAMLCarpenterList.Items.Refresh();
+
+                } 
+                // add some logic if ID doesnt excist
+               
+            }
            
+
         }
 
 

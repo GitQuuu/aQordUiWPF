@@ -9,7 +9,8 @@
     <Grid x:Name="GridForDataGrid" Background="Gray" Height="434">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="31*"/>
-            <ColumnDefinition Width="769*"/>
+            <ColumnDefinition Width="90*"/>
+            <ColumnDefinition Width="679*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
@@ -20,7 +21,7 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <DataGrid x:Name="DataGridXAMLCarpenterList" AlternatingRowBackground="White" CanUserAddRows="False" CanUserSortColumns="True" IsReadOnly="True" 
-                  AutoGenerateColumns="False" Grid.RowSpan="6" Margin="15,10,20,200" Grid.ColumnSpan="2" SelectionUnit="FullRow">
+                  AutoGenerateColumns="False" Grid.RowSpan="6" Margin="15,10,20,200" Grid.ColumnSpan="3" SelectionUnit="FullRow">
             <!--Font color / style of culumn headings-->
             <DataGrid.Resources>
                 <Style TargetType="{x:Type DataGridColumnHeader}">
@@ -40,12 +41,12 @@
                 <DataGridTextColumn Header="Ugentlig arbejdstid" Width="*" Binding="{Binding WorkingHourWeekly}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <ToggleButton x:Name="Update" Content="Redigere" Grid.Column="1" HorizontalAlignment="Left" Height="57" Margin="166,341,0,0" Grid.RowSpan="6" VerticalAlignment="Top" Width="107" Click="UpdateSelected" ClickMode="Press"/>
-        <Button x:Name="Delete" Content="Slet" Grid.Column="1" HorizontalAlignment="Left" Height="57" Margin="460,341,0,0" Grid.RowSpan="6" VerticalAlignment="Top" Width="107" Click="DeleteSelected"/>
+        <ToggleButton x:Name="Update" Content="Redigere" Grid.Column="2" HorizontalAlignment="Left" Height="57" Margin="76,341,0,0" Grid.RowSpan="6" VerticalAlignment="Top" Width="107" Click="UpdateSelected" ClickMode="Press"/>
+        <Button x:Name="Delete" Content="Slet" Grid.Column="2" HorizontalAlignment="Left" Height="57" Margin="370,341,0,0" Grid.RowSpan="6" VerticalAlignment="Top" Width="107" Click="DeleteSelected"/>
         <!--Edit form-->
-        <Grid x:Name="EditForm" Background="Aqua" Margin="15,234,21,134" Grid.RowSpan="6" Grid.ColumnSpan="2" Visibility="Visible" >
-            <TextBox x:Name="EditID" Margin="18,31,681,10" Text="{Binding Path=Id}" />
-            <TextBox x:Name="EditFirstName" Margin="97,31,602,10" Text="{Binding Path= FirstName}"/>
+        <Grid x:Name="EditForm" Background="Aqua" Margin="15,234,21,134" Grid.RowSpan="6" Grid.ColumnSpan="3" Visibility="Hidden" >
+            <TextBox x:Name="EditID" Margin="18,31,681,10" />
+            <TextBox x:Name="EditFirstName" Margin="97,31,602,10"/>
             <TextBox x:Name="EditLastName" Margin="177,31,522,10"/>
             <TextBox x:Name="EditProfession" Margin="256,31,443,10"/>
             <TextBox x:Name="EditHourlyRate" Margin="335,31,364,10"/>
