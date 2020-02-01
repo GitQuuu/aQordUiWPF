@@ -21,7 +21,7 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <DataGrid x:Name="DataGridXAMLCarpenterList" AlternatingRowBackground="White" CanUserAddRows="False" CanUserSortColumns="True" IsReadOnly="True" 
-                  AutoGenerateColumns="False" Grid.RowSpan="6" Margin="15,10,20,200" Grid.ColumnSpan="3" SelectionUnit="FullRow">
+                  AutoGenerateColumns="False" Grid.RowSpan="6" Margin="15,10,20,200" Grid.ColumnSpan="3" SelectionUnit="FullRow" ItemsSource="{Binding CraftMen}">
             <!--Font color / style of culumn headings-->
             <DataGrid.Resources>
                 <Style TargetType="{x:Type DataGridColumnHeader}">
@@ -32,8 +32,8 @@
                 </Style>
             </DataGrid.Resources>
             <!--Columnn header and bindings-->
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding Id}"></DataGridTextColumn>
+            <DataGrid.Columns >
+                <DataGridTextColumn x:Name="IDGrid" Header="ID" Binding="{Binding Id}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Fornavn" Binding="{Binding FirstName}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Efternavn" Binding="{Binding LastName}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Stilling" Binding="{Binding Profession}"></DataGridTextColumn>

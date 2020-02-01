@@ -31,7 +31,7 @@ namespace aQordUiWPF
             StackPanelForCRUD.DataContext = new ExpanderListViewModel();
 
             // this is to populate our list for testing
-            BricklayerList.Add(new Craftsman { Id = 1, FirstName = "Qu", LastName = "Le", Profession = "Murersvend",HourlyRate = 200, WorkingHourWeekly = 37 });
+            BricklayerList.Add(new Craftsman { Id = 1, FirstName = "Qu", LastName = "Le", Profession = "Murersvend",HourlyRate = 200, WorkingHourWeekly = 18 });
             BricklayerList.Add(new Craftsman { Id = 2, FirstName = "Nicoline", LastName = "Le", Profession = "Lærling", HourlyRate = 250, WorkingHourWeekly = 32 });
 
         }
