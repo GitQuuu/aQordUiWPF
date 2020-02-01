@@ -39,6 +39,19 @@ namespace aQordUiWPF.View.CarpenterList
                 DataGridXAMLCarpenterList.Items.Add(craftsman);
             }
         }
-
+        // Method to Delete from the _bricklayerList and from the Xaml view look line 23 in xaml
+        private void DeleteClick(object sender, RoutedEventArgs e)
+        {
+            foreach (Craftsman craftsman in BricklayerMenu.BricklayerList)
+            {
+                if (DataGridXAMLCarpenterList.SelectedItem == craftsman)
+                {
+                    DataGridXAMLCarpenterList.Items.Remove(craftsman);
+                    BricklayerMenu.BricklayerList.Remove(craftsman);
+                    return;
+                }
+            }
+        }
     }
 }
+    
