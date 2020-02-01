@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -39,27 +40,54 @@ namespace aQordUiWPF.View.CarpenterList
                 DataGridXAMLCarpenterList.Items.Add(craftsman);
             }
         }
+
         // Method to Delete from the _bricklayerList and from the Xaml view look line 23 in xaml
         private void DeleteSelected(object sender, RoutedEventArgs e)
         {
-            foreach (Craftsman craftsman in BricklayerMenu.BricklayerList)
+            if (DataGridXAMLCarpenterList.SelectedCells != null && DataGridXAMLCarpenterList.SelectedCells.Count > 0)
             {
-                if (DataGridXAMLCarpenterList.SelectedItem == craftsman)
+                foreach (Craftsman craftsman in BricklayerMenu.BricklayerList)
                 {
-                    DataGridXAMLCarpenterList.Items.Remove(craftsman);
-                    BricklayerMenu.BricklayerList.Remove(craftsman);
-                    return;
+                    if (DataGridXAMLCarpenterList.SelectedItem == craftsman)
+                    {
+                        DataGridXAMLCarpenterList.Items.Remove(craftsman);
+                        BricklayerMenu.BricklayerList.Remove(craftsman);
+                        DataGridXAMLCarpenterList.Items.Refresh();
+                        return;
+                    }
                 }
             }
+            else
+            {
+                MessageBox.Show("Hvem vil du slette? vælg en fra listen oven over", "Fejl", MessageBoxButton.OK,
+                    MessageBoxImage.Hand);
+            }
+           
         }
 
         private void UpdateSelected(object sender, RoutedEventArgs e)
         {
-            if (Update.IsChecked == true)
+            if (DataGridXAMLCarpenterList.SelectedCells != null && DataGridXAMLCarpenterList.SelectedCells.Count > 0)
             {
                 EditForm.Visibility = Visibility.Visible;
             }
+            else
+            {
+                MessageBox.Show("Hvem vil du redigere? vælg en fra listen oven over", "Fejl", MessageBoxButton.OK,
+                    MessageBoxImage.Hand);
+            }
+        }
+
+        private void EditSave(object sender, RoutedEventArgs e)
+        {
+           
+        }
+
+
+        private void EditClose(object sender, RoutedEventArgs e)
+        {
+            EditForm.Visibility = Visibility.Hidden;
         }
     }
-}
-    
+
+}  
