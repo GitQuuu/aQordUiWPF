@@ -41,22 +41,22 @@
             </DataGrid.Columns>
         </DataGrid>
         <ToggleButton x:Name="Update" Content="Redigere" Grid.Column="1" HorizontalAlignment="Left" Height="57" Margin="166,341,0,0" Grid.RowSpan="6" VerticalAlignment="Top" Width="107" Click="UpdateSelected" ClickMode="Press"/>
-        <Button x:Name="Delete" Content="Slet" Grid.Column="1" HorizontalAlignment="Left" Height="57" Margin="452,336,0,0" Grid.RowSpan="6" VerticalAlignment="Top" Width="107" Click="DeleteSelected"/>
+        <Button x:Name="Delete" Content="Slet" Grid.Column="1" HorizontalAlignment="Left" Height="57" Margin="460,341,0,0" Grid.RowSpan="6" VerticalAlignment="Top" Width="107" Click="DeleteSelected"/>
         <!--Edit form-->
-        <Grid x:Name="EditForm" Background="Aqua" Margin="16,234,20,134" Grid.RowSpan="6" Grid.ColumnSpan="2" Visibility="Hidden">
-            <TextBox Margin="18,31,681,10" />
-            <TextBox Margin="97,31,602,10" />
-            <TextBox Margin="177,31,522,10"/>
-            <TextBox Margin="256,31,443,10"/>
-            <TextBox Margin="335,31,364,10"/>
-            <TextBox Margin="412,31,287,10"/>
-            <Button Margin="584,31,114,9">Gem</Button>
-            <Button Margin="675,31,23,9" >Fortryd</Button>
+        <Grid x:Name="EditForm" Background="Aqua" Margin="15,234,21,134" Grid.RowSpan="6" Grid.ColumnSpan="2" Visibility="Visible" >
+            <TextBox x:Name="EditID" Margin="18,31,681,10" Text="{Binding Path=Id}" />
+            <TextBox x:Name="EditFirstName" Margin="97,31,602,10" Text="{Binding Path= FirstName}"/>
+            <TextBox x:Name="EditLastName" Margin="177,31,522,10"/>
+            <TextBox x:Name="EditProfession" Margin="256,31,443,10"/>
+            <TextBox x:Name="EditHourlyRate" Margin="335,31,364,10"/>
+            <TextBox x:Name="EditWeeklyHours" Margin="412,31,287,10"/>
+            <Button Click="EditSave" Margin="584,31,114,9">Gem</Button>
+            <Button Click="EditClose" Margin="655,30,43,10" >Luk</Button>
             <Label Content="ID" HorizontalAlignment="Left" Margin="18,5,0,0" VerticalAlignment="Top" Height="26" Width="65"/>
             <Label Content="Fornavn" HorizontalAlignment="Left" Margin="97,5,0,0" VerticalAlignment="Top" Height="26" Width="65"/>
             <Label Content="Efternavn" HorizontalAlignment="Left" Margin="177,5,0,0" VerticalAlignment="Top" Height="26" Width="65"/>
             <Label Content="Stilling" HorizontalAlignment="Left" Margin="256,5,0,0" VerticalAlignment="Top" Height="26" Width="65"/>
-            <Label Content="Løn i timen" HorizontalAlignment="Left" Margin="335,5,0,0" VerticalAlignment="Top" Height="26" Width="65"/>
+            <Label Content="Løn i timen" HorizontalAlignment="Left" Margin="335,5,0,0" VerticalAlignment="Top" Height="26" Width="72"/>
             <Label Content="Ugentlig arbejdstid" HorizontalAlignment="Left" Margin="412,5,0,0" VerticalAlignment="Top" Height="26" Width="125"/>
         </Grid>
 
