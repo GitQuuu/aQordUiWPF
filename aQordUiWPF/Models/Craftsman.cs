@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 using aQordUiWPF.Annotations;
 
 namespace aQordUiWPF
-{
+{                              // must Inherit this InotifyPropertyChange and then alt+enter or ctrl + .
     public class Craftsman : INotifyPropertyChanged
     {
         public int Id { get; set; }

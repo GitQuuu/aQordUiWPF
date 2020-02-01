@@ -35,9 +35,10 @@ namespace aQordUiWPF.View.CarpenterList
         {
             this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             
-            // Databinding 
-            this.DataContext = this;
+            // Databinding either here first to enable ItemSource in xaml or DataContext on line 8 in xaml
+            //this.DataContext = this;
             
+            //Referencing _craftMen and BricklayerMenu.BricklayerList
             _craftMen = BricklayerMenu.BricklayerList;
 
             InitializeComponent();
