@@ -88,11 +88,7 @@ namespace aQordUiWPF.View.CarpenterList
 
         private void EditSave(object sender, RoutedEventArgs e)
         {
-            // DataGridXAMLCarpenterList.Items
-
-            //foreach (Craftsman craftsman in BricklayerMenu.BricklayerList)
-            //{
-
+          
             Craftsman craftmen = _craftMen.FirstOrDefault(c => c.Id == int.Parse(EditID.Text));
             if (craftmen != null)
             {
@@ -107,12 +103,6 @@ namespace aQordUiWPF.View.CarpenterList
             {
                 MessageBox.Show("ID skal være identisk med eksisterende for at redigere", "Fejl", MessageBoxButton.OK, MessageBoxImage.Hand);
             }
-
-
-            // find out why elseBlock is callling even thou if block is running
-
-            //}
-
 
         }
 
