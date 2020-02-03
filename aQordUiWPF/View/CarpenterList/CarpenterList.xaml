@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:aQordUiWPF.View.CarpenterList"
         mc:Ignorable="d"
-        Title="CarpenterList" Height="450" Width="800" DataContext="{Binding RelativeSource={RelativeSource Self}}">
-                                                                <!--Either start binding with this or use line 39 in the codebehind-->
+        Title="CarpenterList" Height="450" Width="800">
+    <!--DataContext="{Binding RelativeSource={RelativeSource Self}}"-->
+    <!--Either start binding with this or use line 39 in the codebehind-->
     <Grid x:Name="GridForDataGrid" Background="Gray" Height="434">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="31*"/>

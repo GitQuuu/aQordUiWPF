@@ -34,10 +34,10 @@ namespace aQordUiWPF.View.CarpenterList
         public CarpenterList()
         {
             this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
-            
+
             // Databinding either here first to enable ItemSource in xaml or DataContext on line 8 in xaml
-            //this.DataContext = this;
-            
+            this.DataContext = this;
+
             //Referencing _craftMen and BricklayerMenu.BricklayerList
             _craftMen = BricklayerMenu.BricklayerList;
 
@@ -93,7 +93,7 @@ namespace aQordUiWPF.View.CarpenterList
             //foreach (Craftsman craftsman in BricklayerMenu.BricklayerList)
             //{
 
-            var craftmen = _craftMen.FirstOrDefault(c => c.Id == int.Parse(EditID.Text));
+            Craftsman craftmen = _craftMen.FirstOrDefault(c => c.Id == int.Parse(EditID.Text));
             if (craftmen != null)
             {
                 craftmen.Id = Convert.ToInt32(EditID.Text);
