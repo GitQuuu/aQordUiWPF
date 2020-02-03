@@ -22,9 +22,8 @@ namespace aQordUiWPF.View.CarpenterList
     /// </summary>
     public partial class CarpenterList : Window
     {
-        private readonly BricklayerMenu _bricklayerMenu;
         private ObservableCollection<Craftsman> _craftMen = new ObservableCollection<Craftsman>();
-        public ObservableCollection<Craftsman> CraftMen
+        public ObservableCollection<Craftsman> CraftMen // This is being used in CarpenterList.xaml its not being highligted because xaml is not c#
         {
             get
             {
@@ -45,10 +44,6 @@ namespace aQordUiWPF.View.CarpenterList
         }
 
 
-        public CarpenterList(BricklayerMenu bricklayerMenu)
-        {
-            _bricklayerMenu = bricklayerMenu;
-        }
 
         // Method to Delete from the _bricklayerList and from the Xaml view look line 23 in xaml
         private void DeleteSelected(object sender, RoutedEventArgs e)
@@ -90,6 +85,7 @@ namespace aQordUiWPF.View.CarpenterList
         {
           
             Craftsman craftmen = _craftMen.FirstOrDefault(c => c.Id == int.Parse(EditID.Text));
+
             if (craftmen != null)
             {
                 craftmen.Id = Convert.ToInt32(EditID.Text);
