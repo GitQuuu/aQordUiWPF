@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using aQord.Models;
 using aQordUiWPF.View.CarpenterList;
 using aQordUiWPF.ViewModels;
 
@@ -23,6 +24,8 @@ namespace aQordUiWPF
     {
         public static ObservableCollection<Craftsman> BricklayerList = new ObservableCollection<Craftsman>();
         public static List<Craftsman> carpenterList = new List<Craftsman>();
+
+        
 
         public BricklayerMenu()
         {
