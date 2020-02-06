@@ -86,10 +86,11 @@ namespace aQordUiWPF
         
         private void ShowAllClicked(object sender, RoutedEventArgs e)
         {
-           CarpenterList carpenterListWindow = new CarpenterList();
+           CarpenterWindow carpenterWindow = new CarpenterWindow();
            
-           carpenterListWindow.Show();
-           
+
+            carpenterWindow.Show();
+
         }
 
     }

@@ -21,7 +21,7 @@ namespace aQordUiWPF.View.CarpenterList
     /// <summary>
     /// Interaction logic for CarpenterList.xaml
     /// </summary>
-    public partial class CarpenterList : Window
+    public partial class CarpenterWindow : Window
     {
         private ObservableCollection<Craftsman> _craftMen = new ObservableCollection<Craftsman>();
         public ObservableCollection<Craftsman> CraftMen // This is being used in CarpenterList.xaml its not being highligted because xaml is not c#
@@ -31,7 +31,7 @@ namespace aQordUiWPF.View.CarpenterList
                 return _craftMen;
             }
         }
-        public CarpenterList()
+        public CarpenterWindow()
         {
             this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
 
