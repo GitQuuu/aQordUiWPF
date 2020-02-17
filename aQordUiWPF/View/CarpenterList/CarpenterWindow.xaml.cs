@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using aQord.Models;
+using System.ComponentModel;
 
 
 namespace aQordUiWPF.View.CarpenterList
@@ -42,7 +43,9 @@ namespace aQordUiWPF.View.CarpenterList
             //Referencing _craftMen and BricklayerMenu.BricklayerList
             _craftMen = BricklayerMenu.BricklayerList;
 
+
             InitializeComponent();
+
         }
 
 
