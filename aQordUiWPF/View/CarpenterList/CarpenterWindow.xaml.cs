@@ -46,6 +46,7 @@ namespace aQordUiWPF.View.CarpenterList
 
             InitializeComponent();
 
+
         }
 
 
@@ -111,6 +112,11 @@ namespace aQordUiWPF.View.CarpenterList
         private void EditClose(object sender, RoutedEventArgs e)
         {
             EditForm.Visibility = Visibility.Hidden;
+        }
+
+        private void DataGridXAMLCarpenterList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 
