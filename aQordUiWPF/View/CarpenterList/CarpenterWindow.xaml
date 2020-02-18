@@ -45,10 +45,12 @@
                 <DataGridTextColumn Header="Telefon nr." Width="*" Binding="{Binding Cellphone}"></DataGridTextColumn>
 
 
-</DataGrid.Columns>
+            </DataGrid.Columns>
         </DataGrid>
-        <ToggleButton x:Name="Update" Content="Redigere" Grid.Column="2" HorizontalAlignment="Left" Height="57" Margin="76,341,0,0" Grid.RowSpan="6" VerticalAlignment="Top" Width="107" Click="UpdateSelected" ClickMode="Press"/>
-        <Button x:Name="Delete" Content="Slet" Grid.Column="2" HorizontalAlignment="Left" Height="57" Margin="370,341,0,0" Grid.RowSpan="6" VerticalAlignment="Top" Width="107" Click="DeleteSelected"/>
+        <ToggleButton x:Name="Update" Content="Redigere" Grid.Column="2" HorizontalAlignment="Left" Height="57" Margin="24,170,0,0" VerticalAlignment="Top" Width="107" Click="UpdateSelected" ClickMode="Press" Grid.Row="5"/>
+        <Button x:Name="Delete" Content="Slet" Grid.Column="2" HorizontalAlignment="Left" Height="57" Margin="362,170,0,0" VerticalAlignment="Top" Width="107" Click="DeleteSelected" Grid.Row="5"/>
+        <Button x:Name="Export" Content="Eksportere" Grid.Column="2" HorizontalAlignment="Left" Height="57" Margin="196,170,0,0" VerticalAlignment="Top" Width="107" Click="ExportButton" ClickMode="Press"  Grid.Row="5"/>
+
         <!--Edit form-->
         <Grid x:Name="EditForm" Background="Aqua" Margin="15,234,21,134" Grid.RowSpan="6" Grid.ColumnSpan="3" Visibility="Hidden" >
             <TextBox x:Name="EditID" Margin="18,31,681,10" />

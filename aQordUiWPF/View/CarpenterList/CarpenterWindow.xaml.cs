@@ -15,6 +15,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using aQord.Models;
 using System.ComponentModel;
+using System.Text.Json;
+using aQord.Controller;
 
 
 namespace aQordUiWPF.View.CarpenterList
@@ -25,6 +27,8 @@ namespace aQordUiWPF.View.CarpenterList
     /// </summary>
     public partial class CarpenterWindow : Window
     {
+        private readonly CraftsmensController _craftsmensController;
+
         private ObservableCollection<Craftsman> _craftMen = new ObservableCollection<Craftsman>();
         public ObservableCollection<Craftsman> CraftMen // This is being used in CarpenterList.xaml its not being highligted because xaml is not c#
         {
@@ -32,6 +36,11 @@ namespace aQordUiWPF.View.CarpenterList
             {
                 return _craftMen;
             }
+        }
+
+        public CarpenterWindow(aQord.Controller.CraftsmensController craftsmensController)
+        {
+            _craftsmensController = craftsmensController;
         }
         public CarpenterWindow()
         {
@@ -42,7 +51,7 @@ namespace aQordUiWPF.View.CarpenterList
 
             //Referencing _craftMen and BricklayerMenu.BricklayerList
             _craftMen = BricklayerMenu.BricklayerList;
-
+            _craftsmensController = new CraftsmensController(new Craftsman());
 
             InitializeComponent();
 
@@ -117,6 +126,12 @@ namespace aQordUiWPF.View.CarpenterList
         private void DataGridXAMLCarpenterList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void ExportButton(object sender, RoutedEventArgs e)
+        {
+              _craftsmensController.ExportToJson(_craftMen);
+              MessageBox.Show("Exported to Json");
         }
     }
 
