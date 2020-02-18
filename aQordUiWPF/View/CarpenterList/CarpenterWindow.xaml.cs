@@ -128,7 +128,7 @@ namespace aQordUiWPF.View.CarpenterList
 
         }
 
-        private void ExportButton(object sender, RoutedEventArgs e)
+        private void ExportToJsonButton(object sender, RoutedEventArgs e)
         {
               _craftsmensController.ExportToJson(_craftMen);
               MessageBox.Show("Exported to Json");
