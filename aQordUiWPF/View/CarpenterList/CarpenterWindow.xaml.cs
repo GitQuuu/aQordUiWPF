@@ -16,8 +16,10 @@ using System.Windows.Shapes;
 using aQord.Models;
 using System.ComponentModel;
 using System.Text.Json;
+using System.Windows.Forms;
 using aQord.Controller;
-
+using WPFCustomMessageBox;
+using MessageBox = System.Windows.MessageBox;
 
 namespace aQordUiWPF.View.CarpenterList
 {
@@ -128,10 +130,23 @@ namespace aQordUiWPF.View.CarpenterList
 
         }
 
-        private void ExportToJsonButton(object sender, RoutedEventArgs e)
+        private void ExportButton(object sender, RoutedEventArgs e)
         {
-              _craftsmensController.ExportToJson(_craftMen);
-              MessageBox.Show("Exported to Json");
+            
+            switch (CustomMessageBox.ShowYesNoCancel("Export", "Export", "Eksportere til Json", "Eksportere til excel", "Fortryd"))
+            {
+                case MessageBoxResult.Yes:
+                    _craftsmensController.ExportToJson(_craftMen); 
+                    MessageBox.Show("Exported to Json");
+                    break;
+                case MessageBoxResult.No:
+                    break;
+                case MessageBoxResult.Cancel:
+                    break;
+                    
+            }
+
+            
         }
     }
 

@@ -18,6 +18,13 @@
     <PackageReference Include="ClosedXML" Version="0.94.2" />
     <PackageReference Include="ClosedXML.Report" Version="0.1.2" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.0" />
+    <PackageReference Include="WPFCustomMessageBox" Version="1.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
