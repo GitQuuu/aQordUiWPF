@@ -65,6 +65,8 @@ namespace aQordUiWPF
                 Profession = ProfessionComboBox.Text,
                 HourlyRate = Convert.ToDecimal(HourlyRate.Text),
                 WorkingHourWeekly = Convert.ToDouble(WeeklyHours.Text),
+                Email = Email.Text,
+                Cellphone = Convert.ToInt32(Cellphone.Text)
 
             };
                 BricklayerList.Add(bricklayer);

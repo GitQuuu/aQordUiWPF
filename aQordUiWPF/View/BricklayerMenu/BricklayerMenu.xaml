@@ -29,16 +29,20 @@
                               IsExpanded="{Binding SelectedExpander, Converter={StaticResource ExpanderToBooleanConverter}, ConverterParameter=1, Mode=TwoWay}">
                         <Grid Name="Create" Background="#FFE5E5E5" Width="878" Height="209">
 
-                            <TextBox x:Name="Id" HorizontalAlignment="Left" Margin="10,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="40"/>
-                            <TextBox x:Name="FirstName" Margin="171,100,561,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
-                            <TextBox x:Name="LastName" HorizontalAlignment="Left" Margin="336,100,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
-                            <TextBox x:Name="HourlyRate" HorizontalAlignment="Left" Margin="500,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41" RenderTransformOrigin="0.349,2.024"/>
-                            <TextBox x:Name="WeeklyHours" HorizontalAlignment="Left" Margin="672,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="41"/>
-                            <Label Content="ID" HorizontalAlignment="Left" Height="28" Margin="10,72,0,0" VerticalAlignment="Top" Width="146"/>
-                            <Label Content="Navn" HorizontalAlignment="Left" Height="28" Margin="171,69,0,0" VerticalAlignment="Top" Width="146"/>
-                            <Label Content="Efternavn" HorizontalAlignment="Left" Height="30" Margin="336,63,0,0" VerticalAlignment="Top" Width="146"/>
-                            <Label Content="Løn i timen" HorizontalAlignment="Left" Height="29" Margin="500,65,0,0" VerticalAlignment="Top" Width="146"/>
-                            <Label Content="Ugentlig arbejdstimer" HorizontalAlignment="Left" Height="29" Margin="672,62,0,0" VerticalAlignment="Top" Width="159"/>
+                            <TextBox x:Name="Id" HorizontalAlignment="Left" Margin="10,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="21"/>
+                            <TextBox x:Name="FirstName" Margin="168,66,564,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="21"/>
+                            <TextBox x:Name="LastName" HorizontalAlignment="Left" Margin="322,66,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="21"/>
+                            <TextBox x:Name="HourlyRate" HorizontalAlignment="Left" Margin="482,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="19" RenderTransformOrigin="0.349,2.024"/>
+                            <TextBox x:Name="WeeklyHours" HorizontalAlignment="Left" Margin="648,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="19"/>
+                            <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="10,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="25"/>
+                            <TextBox x:Name="Cellphone" HorizontalAlignment="Left" Margin="171,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="25"/>
+                            <Label Content="ID" HorizontalAlignment="Left" Height="28" Margin="10,40,0,0" VerticalAlignment="Top" Width="146"/>
+                            <Label Content="Navn" HorizontalAlignment="Left" Height="28" Margin="171,38,0,0" VerticalAlignment="Top" Width="146"/>
+                            <Label Content="Efternavn" HorizontalAlignment="Left" Height="30" Margin="336,38,0,0" VerticalAlignment="Top" Width="146"/>
+                            <Label Content="Løn i timen" HorizontalAlignment="Left" Height="29" Margin="482,39,0,0" VerticalAlignment="Top" Width="146"/>
+                            <Label Content="Ugentlig arbejdstimer" HorizontalAlignment="Left" Height="29" Margin="648,39,0,0" VerticalAlignment="Top" Width="159"/>
+                            <Label Content="Email" HorizontalAlignment="Left" Height="28" Margin="10,93,0,0" VerticalAlignment="Top" Width="146"/>
+                            <Label Content="Telefon" HorizontalAlignment="Left" Height="28" Margin="171,93,0,0" VerticalAlignment="Top" Width="146"/>
                             <StackPanel VerticalAlignment="Bottom">
                                 <Button Content="Fortryd" Click="ResetClick"/>
                                 <Button Content="Gem" Click="SavedClick" />
@@ -46,7 +50,7 @@
 
                             <Label Content="Stilling" HorizontalAlignment="Left" Height="29" Margin="10,4,0,0" VerticalAlignment="Top" Width="146"/>
 
-                            <ComboBox x:Name="ProfessionComboBox"  HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" Width="307" Height="30">
+                            <ComboBox x:Name="ProfessionComboBox"  HorizontalAlignment="Left" Margin="161,3,0,0" VerticalAlignment="Top" Width="307" Height="30">
                                 <ComboBoxItem x:Name="BoxItemBricklayer">
                                     <TextBlock><Run Text="Muresvend"/></TextBlock>
                                 </ComboBoxItem>
@@ -57,6 +61,8 @@
                                     <TextBlock><Run Text="Arbejdsmand"/></TextBlock>
                                 </ComboBoxItem>
                             </ComboBox>
+                           
+
                         </Grid>
                     </Expander>
 
