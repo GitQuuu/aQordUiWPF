@@ -140,7 +140,8 @@ namespace aQordUiWPF.View.CarpenterList
                     MessageBox.Show("Exported to Json");
                     break;
                 case MessageBoxResult.No:
-                    _craftsmensController.ExportToExcel();
+                    _craftsmensController.ExportToExel(_craftMen);
+                    MessageBox.Show("Exported to excel");
                     break;
                 case MessageBoxResult.Cancel:
                     break;
