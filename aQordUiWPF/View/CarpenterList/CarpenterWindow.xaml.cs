@@ -14,7 +14,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using aQord.Models;
-using System.ComponentModel;
 using System.Text.Json;
 using System.Windows.Forms;
 using aQord.Controller;
@@ -30,6 +29,7 @@ namespace aQordUiWPF.View.CarpenterList
     public partial class CarpenterWindow : Window
     {
         private readonly CraftsmensController _craftsmensController;
+        private readonly BackgroundWorker worker = new BackgroundWorker();
 
         private ObservableCollection<Craftsman> _craftMen = new ObservableCollection<Craftsman>();
         public ObservableCollection<Craftsman> CraftMen // This is being used in CarpenterList.xaml its not being highligted because xaml is not c#
@@ -56,11 +56,26 @@ namespace aQordUiWPF.View.CarpenterList
             _craftsmensController = new CraftsmensController(new Craftsman());
 
             InitializeComponent();
-
+            AutoUpdate();
 
         }
 
+        // Doing some backgroundworker 
+        public void AutoUpdate()
+        {
+            worker.DoWork += worker_DoWork;
+            worker.RunWorkerCompleted += worker_RunWorkerCompleted;
+        }
 
+        private void worker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            // run all background tasks here
+        }
+
+        private void worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            //update ui once worker complete his work
+        }
 
         // Method to Delete from the _bricklayerList and from the Xaml view look line 23 in xaml
         private void DeleteSelected(object sender, RoutedEventArgs e)
