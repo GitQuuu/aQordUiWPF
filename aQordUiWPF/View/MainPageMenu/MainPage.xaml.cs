@@ -21,6 +21,7 @@ namespace aQordUiWPF
         public MainPage()
         {
             InitializeComponent();
+            BricklayerMenu.AutoUpdate();
         }
 
         private void PickBricklayer(object sender, RoutedEventArgs e)

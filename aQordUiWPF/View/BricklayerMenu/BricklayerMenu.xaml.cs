@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.IO;
 using System.Text;
 using System.Text.Json.Serialization;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -29,7 +31,7 @@ namespace aQordUiWPF
     public partial class BricklayerMenu : Page
     {
         public static ObservableCollection<Craftsman> BricklayerList = new ObservableCollection<Craftsman>();
-
+        private static  BackgroundWorker worker = new BackgroundWorker();
 
 
 
@@ -44,19 +46,56 @@ namespace aQordUiWPF
             //BricklayerList.Add(new Craftsman(2, "Lærling", "Qu", "Le", 200, 37, "Qu@test.dk", 60177516));
             //BricklayerList.Add(new Craftsman(3, "Murer", "Nicoline", "Le", 200, 32, "Nicoline@test.dk", 87654321));
 
+            // or use this to populate BricklayerList from Json file
             LoadJsonToCollection();
+
+            
         }
 
 
+        public static void AutoUpdate()
+        {
+            worker.DoWork += worker_DoWork;
+            worker.RunWorkerCompleted += worker_RunWorkerCompleted;
+        }
 
+        private static void worker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            // run all background tasks here
 
+            while (true)
+            {
+                ObservableCollection<Craftsman> listToCompare = JsonConvert.DeserializeObject<ObservableCollection<Craftsman>>(File.ReadAllText("C:\\Users\\Quanv\\source\\repos\\aQord\\aQord\\Files\\JsonOutput\\Wednesday, February 19, 2020.json"));
 
+                foreach (var objetcs in listToCompare)
+                {
+                    listToCompare.Add(objetcs);
+                }
+
+                if (listToCompare != BricklayerList)
+                {
+                    BricklayerList = listToCompare;
+                }
+
+                Thread.Sleep(2000);
+            }
+           
+
+        }
+
+        private static void worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            //update ui once worker complete his work
+        }
+
+        // Method to Delete from the _bricklayerList and from the Xaml view look line 23 in xaml
         public void LoadJsonToCollection()
         {
             List<Craftsman> deserializeObject = JsonConvert.DeserializeObject<List<Craftsman>>(
                 File.ReadAllText(
                     "C:\\Users\\Quanv\\source\\repos\\aQord\\aQord\\Files\\JsonOutput\\Wednesday, February 19, 2020.json"));
 
+            BricklayerList.Clear();
             foreach (var objetcs in deserializeObject)
             {
                 BricklayerList.Add(objetcs);
