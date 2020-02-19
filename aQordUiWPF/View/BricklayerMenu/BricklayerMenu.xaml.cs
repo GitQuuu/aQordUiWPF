@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -14,6 +16,10 @@ using System.Windows.Shapes;
 using aQord.Models;
 using aQordUiWPF.View.CarpenterList;
 using aQordUiWPF.ViewModels;
+using Microsoft.Xrm.Sdk.Messages;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using JsonConverter = Newtonsoft.Json.JsonConverter;
 
 namespace aQordUiWPF
 {
@@ -23,9 +29,9 @@ namespace aQordUiWPF
     public partial class BricklayerMenu : Page
     {
         public static ObservableCollection<Craftsman> BricklayerList = new ObservableCollection<Craftsman>();
-        public static List<Craftsman> carpenterList = new List<Craftsman>();
 
-        
+
+
 
         public BricklayerMenu()
         {
@@ -34,10 +40,19 @@ namespace aQordUiWPF
             StackPanelForCRUD.DataContext = new ExpanderListViewModel();
 
             // this is to populate our list for testing
-            BricklayerList.Add(new Craftsman(1, "Murer", "Emil", "Fredriksen", 200, 37, "Emil@test.dk", 12345678));
-            BricklayerList.Add(new Craftsman(2, "Lærling", "Qu", "Le", 200, 37, "Qu@test.dk", 60177516));
-            BricklayerList.Add(new Craftsman(3, "Murer", "Nicoline", "Le", 200, 32, "Nicoline@test.dk", 87654321));
+            //BricklayerList.Add(new Craftsman(1, "Murer", "Emil", "Fredriksen", 200, 37, "Emil@test.dk", 12345678));
+            //BricklayerList.Add(new Craftsman(2, "Lærling", "Qu", "Le", 200, 37, "Qu@test.dk", 60177516));
+            //BricklayerList.Add(new Craftsman(3, "Murer", "Nicoline", "Le", 200, 32, "Nicoline@test.dk", 87654321));
 
+            LoadJson();
+        }
+
+       
+
+
+        public void LoadJson()
+        {
+            var deserializeObject = JsonConvert.DeserializeObject<List<Craftsman>>(File.ReadAllText("C:\\Users\\Quanv\\source\\repos\\aQord\\aQord\\Files\\JsonOutput\\Wednesday, February 19, 2020.json"));
 
         }
 
@@ -45,7 +60,7 @@ namespace aQordUiWPF
         private void ReturnToMainPage(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Uri(@"\View\MainPageMenu\MainPage.xaml", UriKind.Relative));
-            
+
         }
 
         private void PickTiles(object sender, RoutedEventArgs e)
@@ -53,7 +68,7 @@ namespace aQordUiWPF
             NavigationService.Navigate(new Uri(@"\View\BricklayerTilesMenu\BricklayerTilesMenu.xaml", UriKind.Relative));
         }
 
-        
+
 
         private void SavedClick(object sender, RoutedEventArgs e)
         {
@@ -69,9 +84,9 @@ namespace aQordUiWPF
                 Cellphone = Convert.ToInt32(Cellphone.Text)
 
             };
-                BricklayerList.Add(bricklayer);
-            
-                MessageBox.Show("Gemt", "Gemt", MessageBoxButton.OK, MessageBoxImage.Asterisk);
+            BricklayerList.Add(bricklayer);
+
+            MessageBox.Show("Gemt", "Gemt", MessageBoxButton.OK, MessageBoxImage.Asterisk);
         }
 
         private void ResetClick(object sender, RoutedEventArgs e)
@@ -87,11 +102,11 @@ namespace aQordUiWPF
         }
 
 
-        
+
         private void ShowAllClicked(object sender, RoutedEventArgs e)
         {
-           CarpenterWindow carpenterWindow = new CarpenterWindow();
-           
+            CarpenterWindow carpenterWindow = new CarpenterWindow();
+
 
             carpenterWindow.Show();
 
