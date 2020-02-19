@@ -44,15 +44,23 @@ namespace aQordUiWPF
             //BricklayerList.Add(new Craftsman(2, "Lærling", "Qu", "Le", 200, 37, "Qu@test.dk", 60177516));
             //BricklayerList.Add(new Craftsman(3, "Murer", "Nicoline", "Le", 200, 32, "Nicoline@test.dk", 87654321));
 
-            LoadJson();
+            LoadJsonToCollection();
         }
 
-       
 
 
-        public void LoadJson()
+
+
+        public void LoadJsonToCollection()
         {
-            var deserializeObject = JsonConvert.DeserializeObject<List<Craftsman>>(File.ReadAllText("C:\\Users\\Quanv\\source\\repos\\aQord\\aQord\\Files\\JsonOutput\\Wednesday, February 19, 2020.json"));
+            List<Craftsman> deserializeObject = JsonConvert.DeserializeObject<List<Craftsman>>(
+                File.ReadAllText(
+                    "C:\\Users\\Quanv\\source\\repos\\aQord\\aQord\\Files\\JsonOutput\\Wednesday, February 19, 2020.json"));
+
+            foreach (var objetcs in deserializeObject)
+            {
+                BricklayerList.Add(objetcs);
+            }
 
         }
 
