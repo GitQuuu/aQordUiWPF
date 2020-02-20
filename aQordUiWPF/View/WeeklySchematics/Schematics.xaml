@@ -9,16 +9,17 @@
 
 
     <Grid Height="588">
-        <DataGrid CanUserSortColumns="True" CanUserAddRows="True"  Margin="0,0,0,0" Height="361">
+        <DataGrid x:Name="SchematicDataGrid" CanUserSortColumns="True" CanUserAddRows="True"  Margin="130,10,91,236">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Test" ></DataGridTextColumn>
-                <DataGridTextColumn Header="Test" ></DataGridTextColumn>
-                <DataGridTextColumn Header="Test" ></DataGridTextColumn>
-                <DataGridTextColumn Header="Test" ></DataGridTextColumn>
-                <DataGridTextColumn Header="Test" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Arbejds nr" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Navn" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Uge nr" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Timer i akkord" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Dagløns timer" ></DataGridTextColumn>
             </DataGrid.Columns>
+            
         </DataGrid>
     </Grid>
-    
+
 
 </Window>
