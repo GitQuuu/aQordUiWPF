@@ -56,7 +56,9 @@ namespace aQordUiWPF.View.CarpenterList
             _craftsmensController = new CraftsmensController(new Craftsman());
 
             InitializeComponent();
-            AutoUpdate();
+
+            // Remove comment from below to start the backgroundworker task
+            //AutoUpdate();
         }
 
         // Doing some backgroundworker 
