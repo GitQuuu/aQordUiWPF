@@ -21,5 +21,7 @@ namespace aQordUiWPF.View.WeeklySchematics
         {
             InitializeComponent();
         }
+
+       
     }
 }

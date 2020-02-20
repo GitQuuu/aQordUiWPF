@@ -5,9 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:aQordUiWPF.View.WeeklySchematics"
         mc:Ignorable="d"
-        Title="Schematics" Height="450" Width="800">
-    <Grid>
-        <DataGrid>
+        Title="Schematics" Height="598" Width="1080">
+
+
+    <Grid Height="588">
+        <DataGrid CanUserSortColumns="True" CanUserAddRows="True"  Margin="0,0,0,0" Height="361">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Test" ></DataGridTextColumn>
                 <DataGridTextColumn Header="Test" ></DataGridTextColumn>
@@ -17,4 +19,6 @@
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
+    
+
 </Window>
