@@ -69,8 +69,8 @@
                     <Expander Header="Vis alle/en"
                               IsExpanded="{Binding SelectedExpander, Converter={StaticResource ExpanderToBooleanConverter}, ConverterParameter=2, Mode=TwoWay}">
                         <Grid Name="Read" Width="878" Height="209">
-                            <Button Click="ShowAllClicked" Margin="160,72,598,81">Håndværker</Button>
-                            <Button HorizontalAlignment="Left" Margin="607,72,0,0" VerticalAlignment="Top" Height="56" Width="117">uge skema</Button>
+                            <Button Click="ShowCarpenterWindow" Margin="160,72,598,81">Håndværker</Button>
+                            <Button HorizontalAlignment="Left" Margin="607,72,0,0" VerticalAlignment="Top" Height="56" Width="117" Click="ShowSchematicsWindow">uge skema</Button>
                         </Grid>
 
                     </Expander>

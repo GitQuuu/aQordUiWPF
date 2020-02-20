@@ -17,6 +17,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using aQord.Models;
 using aQordUiWPF.View.CarpenterList;
+using aQordUiWPF.View.WeeklySchematics;
 using aQordUiWPF.ViewModels;
 using Microsoft.Xrm.Sdk.Messages;
 using Newtonsoft.Json;
@@ -104,7 +105,7 @@ namespace aQordUiWPF
 
 
 
-        private void ShowAllClicked(object sender, RoutedEventArgs e)
+        private void ShowCarpenterWindow(object sender, RoutedEventArgs e)
         {
             CarpenterWindow carpenterWindow = new CarpenterWindow();
 
@@ -113,5 +114,10 @@ namespace aQordUiWPF
 
         }
 
+        private void ShowSchematicsWindow(object sender, RoutedEventArgs e)
+        {
+            Schematics weeklySchematics = new Schematics();
+            weeklySchematics.Show();
+        }
     }
 }
