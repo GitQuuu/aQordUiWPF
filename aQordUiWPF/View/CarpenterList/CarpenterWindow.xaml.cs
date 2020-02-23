@@ -78,7 +78,7 @@ namespace aQordUiWPF.View.CarpenterList
             
                 while (true)
                 {
-                    ObservableCollection<Craftsman> listToCompare = JsonConvert.DeserializeObject<ObservableCollection<Craftsman>>(File.ReadAllText("C:\\Users\\Quanv\\source\\repos\\aQord\\aQord\\Files\\JsonOutput\\Wednesday, February 19, 2020.json"));
+                    ObservableCollection<Craftsman> listToCompare = JsonConvert.DeserializeObject<ObservableCollection<Craftsman>>(File.ReadAllText("C:\\Users\\Quanv\\source\\repos\\aQord\\aQord\\Files\\JsonOutput\\BackgroundWorkerTest.json"));
 
                     //Dispatcher is needed for to be able to change in sourceCollection
                     App.Current.Dispatcher.Invoke((Action)delegate
