@@ -62,7 +62,7 @@ namespace aQordUiWPF.View.CarpenterList
         }
 
         // Doing some backgroundworker 
-        // AutoUpdate method being called from mainwindow
+        
         public static void AutoUpdate()
         {
             
