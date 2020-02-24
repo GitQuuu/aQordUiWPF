@@ -22,7 +22,10 @@ namespace aQordUiWPF
         public MainPage()
         {
             InitializeComponent();
-            
+
+            // Remove comment from below to start the backgroundworker task
+            //CarpenterWindow.AutoUpdate();
+
         }
 
         private void PickBricklayer(object sender, RoutedEventArgs e)

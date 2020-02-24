@@ -57,8 +57,6 @@ namespace aQordUiWPF.View.CarpenterList
 
             InitializeComponent();
 
-            // Remove comment from below to start the backgroundworker task
-            //AutoUpdate();
         }
 
         // Doing some backgroundworker 
