@@ -19,6 +19,7 @@ using System.Text.Json;
 using System.Threading;
 using System.Windows.Forms;
 using aQord.Controller;
+using DocumentFormat.OpenXml.Drawing.Charts;
 using Newtonsoft.Json;
 using WPFCustomMessageBox;
 using MessageBox = System.Windows.MessageBox;
@@ -131,6 +132,13 @@ namespace aQordUiWPF.View.CarpenterList
             {
                 EditForm.Visibility = Visibility.Visible;
                 //EditID.Text = (string)DataGridXAMLCarpenterList.CurrentCell.Item;
+                Craftsman SendToEditform = (Craftsman)DataGridXAMLCarpenterList.SelectedItem;
+                EditID.Text = SendToEditform.Id.ToString();
+                EditFirstName.Text = SendToEditform.FirstName;
+                EditLastName.Text = SendToEditform.LastName;
+                EditProfession.Text = SendToEditform.Profession;
+                EditHourlyRate.Text = SendToEditform.HourlyRate.ToString();
+                EditWeeklyHours.Text = SendToEditform.WorkingHourWeekly.ToString();
             }
             else
             {
